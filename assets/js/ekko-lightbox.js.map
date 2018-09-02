@@ -1,0 +1,894 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-98cac35b43fab8341490a2623fdaa7b696bbaea87bccf8f485fd5cdb4996cd9b52bdb24709fb3bab0a0dcff4a29187d65028ee693d609ce5c0c3283c77a247a9.css" integrity="sha512-mMrDW0P6uDQUkKJiP9qntpa7rqh7zPj0hf1c20mWzZtSvbJHCfs7qwoNz/SikYfWUCjuaT1gnOXAwyg8d6JHqQ==" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-cffe8287ff66521c8dbcec6be3b42c1d3a96ac690a876002346fe4cff24e7a09c5416b0a7f1d7523f4873204420f0bd565d73dab259933a9c2c447215d1af94f.css" integrity="sha512-z/6Ch/9mUhyNvOxr47QsHTqWrGkKh2ACNG/kz/JOegnFQWsKfx11I/SHMgRCDwvVZdc9qyWZM6nCxEchXRr5Tw==" media="all" rel="stylesheet" />
+  
+  
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-e1e1bc98a53e47d4009cc4307d22206e8db8852fa7517c52b94b391b92cc430fb9c230b54d229f83125bda3eb53d7c9af78fb0330375393eebecc179adb754bf.css" integrity="sha512-4eG8mKU+R9QAnMQwfSIgbo24hS+nUXxSuUs5G5LMQw+5wjC1TSKfgxJb2j61PXya94+wMwN1OT7r7MF5rbdUvw==" media="all" rel="stylesheet" />
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>lightbox/ekko-lightbox.js.map at master · ashleydw/lightbox · GitHub</title>
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta content="https://avatars2.githubusercontent.com/u/844437?s=400&amp;v=4" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="ashleydw/lightbox" property="og:title" /><meta content="https://github.com/ashleydw/lightbox" property="og:url" /><meta content="A lightbox gallery plugin for Bootstrap" property="og:description" />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  
+  <meta name="pjax-timeout" content="1000">
+  
+  <meta name="request-id" content="FE92:4A90:3B3D043:6AAB5F7:5A6E24E1" data-pjax-transient>
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="FE92:4A90:3B3D043:6AAB5F7:5A6E24E1" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" />
+<meta content="https://github.com/hydro_browser_events" name="hydro-events-url" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+  <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="OTE1MzdhZGU0ZGM4MGU5ZmMxYzVmN2Q5NjhiMDEyYTA1NTBmOGRiNWNhODAyNzJiN2VmZWFlMmY5OTljYzNjZXx7InJlbW90ZV9hZGRyZXNzIjoiNzAuNTUuMTU2LjgxIiwicmVxdWVzdF9pZCI6IkZFOTI6NEE5MDozQjNEMDQzOjZBQUI1Rjc6NUE2RTI0RTEiLCJ0aW1lc3RhbXAiOjE1MTcxNjc4NTIsImhvc3QiOiJnaXRodWIuY29tIn0=">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS">
+
+  <meta name="html-safe-nonce" content="04e6cfdc25f40d4ae8d2a0c40dc60eb86c3a6de4">
+
+  <meta http-equiv="x-pjax-version" content="95a020660452b379aa65f4d812f2124e">
+  
+
+      <link href="https://github.com/ashleydw/lightbox/commits/master.atom" rel="alternate" title="Recent Commits to lightbox:master" type="application/atom+xml">
+
+  <meta name="description" content="A lightbox gallery plugin for Bootstrap">
+  <meta name="go-import" content="github.com/ashleydw/lightbox git https://github.com/ashleydw/lightbox.git">
+
+  <meta content="844437" name="octolytics-dimension-user_id" /><meta content="ashleydw" name="octolytics-dimension-user_login" /><meta content="12194665" name="octolytics-dimension-repository_id" /><meta content="ashleydw/lightbox" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="12194665" name="octolytics-dimension-repository_network_root_id" /><meta content="ashleydw/lightbox" name="octolytics-dimension-repository_network_root_nwo" /><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
+
+
+    <link rel="canonical" href="https://github.com/ashleydw/lightbox/blob/master/dist/ekko-lightbox.js.map" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <meta name="u2f-support" content="true">
+
+  </head>
+
+  <body class="logged-out env-production emoji-size-boost page-blob">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="px-2 py-4 show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        <header class="Header header-logged-out  position-relative f4 py-3" role="banner">
+  <div class="container-lg d-flex px-3">
+    <div class="d-flex flex-justify-between flex-items-center">
+      <a class="header-logo-invertocat my-0" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+        <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--bright d-flex flex-justify-between flex-auto">
+        <nav class="mt-0">
+          <ul class="d-flex list-style-none">
+              <li class="ml-2">
+                <a href="/features" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:features" data-selected-links="/features /features/project-management /features/code-review /features/project-management /features/integrations /features">
+                  Features
+</a>              </li>
+              <li class="ml-4">
+                <a href="/business" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/security /business/customers /business">
+                  Business
+</a>              </li>
+
+              <li class="ml-4">
+                <a href="/explore" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore">
+                  Explore
+</a>              </li>
+
+              <li class="ml-4">
+                    <a href="/marketplace" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:marketplace" data-selected-links=" /marketplace">
+                      Marketplace
+</a>              </li>
+              <li class="ml-4">
+                <a href="/pricing" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:pricing" data-selected-links="/pricing /pricing/developer /pricing/team /pricing/business-hosted /pricing/business-enterprise /pricing">
+                  Pricing
+</a>              </li>
+          </ul>
+        </nav>
+
+      <div class="d-flex">
+          <div class="d-lg-flex flex-items-center mr-3">
+            <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/ashleydw/lightbox/search" class="js-site-search-form" data-scoped-search-url="/ashleydw/lightbox/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+        <a href="/ashleydw/lightbox/blob/master/dist/ekko-lightbox.js.map" class="header-search-scope no-underline">This repository</a>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        value=""
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off">
+        <input type="hidden" class="js-site-search-type-field" name="type" >
+    </label>
+</form></div>
+
+          </div>
+
+        <span class="d-inline-block">
+            <div class="HeaderNavlink px-0 py-2 m-0">
+              <a class="text-bold text-white no-underline" href="/login?return_to=%2Fashleydw%2Flightbox%2Fblob%2Fmaster%2Fdist%2Fekko-lightbox.js.map" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+                <span class="text-gray">or</span>
+                <a class="text-bold text-white no-underline" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+            </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main" class="application-main ">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container >
+      
+
+
+
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+      <a href="/login?return_to=%2Fashleydw%2Flightbox"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+  </a>
+  <a class="social-count" href="/ashleydw/lightbox/watchers"
+     aria-label="97 users are watching this repository">
+    97
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fashleydw%2Flightbox"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/ashleydw/lightbox/stargazers"
+      aria-label="1358 users starred this repository">
+      1,358
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fashleydw%2Flightbox"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+      </a>
+
+    <a href="/ashleydw/lightbox/network" class="social-count"
+       aria-label="865 users forked this repository">
+      865
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a href="/ashleydw" class="url fn" rel="author">ashleydw</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/ashleydw/lightbox" data-pjax="#js-repo-pjax-container">lightbox</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/ashleydw/lightbox" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /ashleydw/lightbox" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/ashleydw/lightbox/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /ashleydw/lightbox/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">21</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/ashleydw/lightbox/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /ashleydw/lightbox/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">6</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="/ashleydw/lightbox/projects" class="js-selected-navigation-item reponav-item" data-hotkey="g b" data-selected-links="repo_projects new_repo_project repo_project /ashleydw/lightbox/projects">
+      <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+
+
+  <a href="/ashleydw/lightbox/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /ashleydw/lightbox/pulse">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+  <a href="/ashleydw/lightbox/blob/496f727e324b61938281c48cc0854522cf54bb63/dist/ekko-lightbox.js.map" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <!-- blob contrib key: blob_contributors:v21:7080cbf8b06e823b97b6c9f4a4ef91bd -->
+
+  <div class="file-navigation js-zeroclipboard-container">
+    
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/ashleydw/lightbox/blob/123_events_doc/dist/ekko-lightbox.js.map"
+               data-name="123_events_doc"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                123_events_doc
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/ashleydw/lightbox/blob/149_remove_toggle/dist/ekko-lightbox.js.map"
+               data-name="149_remove_toggle"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                149_remove_toggle
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/ashleydw/lightbox/blob/gh-pages/dist/ekko-lightbox.js.map"
+               data-name="gh-pages"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                gh-pages
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/ashleydw/lightbox/blob/master/dist/ekko-lightbox.js.map"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v5.1.1/dist/ekko-lightbox.js.map"
+              data-name="v5.1.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.1.1">
+                v5.1.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v5.0.0/dist/ekko-lightbox.js.map"
+              data-name="v5.0.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.0.0">
+                v5.0.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v4.0.2/dist/ekko-lightbox.js.map"
+              data-name="v4.0.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.2">
+                v4.0.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v4.0.1/dist/ekko-lightbox.js.map"
+              data-name="v4.0.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.1">
+                v4.0.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v4.0.0/dist/ekko-lightbox.js.map"
+              data-name="v4.0.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.0">
+                v4.0.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v3.3.3/dist/ekko-lightbox.js.map"
+              data-name="v3.3.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.3.3">
+                v3.3.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v3.3.2/dist/ekko-lightbox.js.map"
+              data-name="v3.3.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.3.2">
+                v3.3.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v3.3.1/dist/ekko-lightbox.js.map"
+              data-name="v3.3.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.3.1">
+                v3.3.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v3.3.0/dist/ekko-lightbox.js.map"
+              data-name="v3.3.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.3.0">
+                v3.3.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v3.2.3/dist/ekko-lightbox.js.map"
+              data-name="v3.2.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.3">
+                v3.2.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v3.2.2/dist/ekko-lightbox.js.map"
+              data-name="v3.2.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.2">
+                v3.2.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v3.2.1/dist/ekko-lightbox.js.map"
+              data-name="v3.2.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.1">
+                v3.2.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v3.2.0/dist/ekko-lightbox.js.map"
+              data-name="v3.2.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.0">
+                v3.2.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v3.1.5/dist/ekko-lightbox.js.map"
+              data-name="v3.1.5"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.1.5">
+                v3.1.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v3.1.4/dist/ekko-lightbox.js.map"
+              data-name="v3.1.4"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.1.4">
+                v3.1.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v3.1.3/dist/ekko-lightbox.js.map"
+              data-name="v3.1.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.1.3">
+                v3.1.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v3.1.2/dist/ekko-lightbox.js.map"
+              data-name="v3.1.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.1.2">
+                v3.1.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v3.1.1/dist/ekko-lightbox.js.map"
+              data-name="v3.1.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.1.1">
+                v3.1.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v3.1.1-alpha/dist/ekko-lightbox.js.map"
+              data-name="v3.1.1-alpha"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.1.1-alpha">
+                v3.1.1-alpha
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v3.0.3/dist/ekko-lightbox.js.map"
+              data-name="v3.0.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.3">
+                v3.0.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v3.0.2/dist/ekko-lightbox.js.map"
+              data-name="v3.0.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.2">
+                v3.0.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/v1.0/dist/ekko-lightbox.js.map"
+              data-name="v1.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.0">
+                v1.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/rm/dist/ekko-lightbox.js.map"
+              data-name="rm"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="rm">
+                rm
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/5.3.0/dist/ekko-lightbox.js.map"
+              data-name="5.3.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="5.3.0">
+                5.3.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/ashleydw/lightbox/tree/5.2.0/dist/ekko-lightbox.js.map"
+              data-name="5.2.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="5.2.0">
+                5.2.0
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="BtnGroup float-right">
+      <a href="/ashleydw/lightbox/find/master"
+            class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+            data-pjax
+            data-hotkey="t">
+        Find file
+      </a>
+      <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
+    </div>
+    <div class="breadcrumb js-zeroclipboard-target">
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/ashleydw/lightbox"><span>lightbox</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/ashleydw/lightbox/tree/master/dist"><span>dist</span></a></span><span class="separator">/</span><strong class="final-path">ekko-lightbox.js.map</strong>
+    </div>
+  </div>
+
+
+  
+  <div class="commit-tease">
+      <span class="float-right">
+        <a class="commit-tease-sha" href="/ashleydw/lightbox/commit/e445452a71a6c1ad88e53e23e29f78664bd60704" data-pjax>
+          e445452
+        </a>
+        <relative-time datetime="2017-10-15T11:39:13Z">Oct 15, 2017</relative-time>
+      </span>
+      <div>
+        <img alt="@RafaPolit" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/4309019?s=40&amp;v=4" width="20" />
+        <a href="/RafaPolit" class="user-mention" rel="contributor">RafaPolit</a>
+          <a href="/ashleydw/lightbox/commit/e445452a71a6c1ad88e53e23e29f78664bd60704" class="message" data-pjax="true" title="Fix aspect ratio issues, add max-width/max-height options. (#274)
+
+* Fixed aspect ratio issues for all sizes.
+Forced 10px margin when window size &gt; 575px to keep a congruent display.
+Removed 15px margin for scroll.
+
+* Added HTML examples and created build.
+
+* Upped version.">Fix aspect ratio issues, add max-width/max-height options. (</a><a href="https://github.com/ashleydw/lightbox/pull/274" class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="265347269" data-permission-text="Issue title is private" data-url="https://github.com/ashleydw/lightbox/issues/274">#274</a><a href="/ashleydw/lightbox/commit/e445452a71a6c1ad88e53e23e29f78664bd60704" class="message" data-pjax="true" title="Fix aspect ratio issues, add max-width/max-height options. (#274)
+
+* Fixed aspect ratio issues for all sizes.
+Forced 10px margin when window size &gt; 575px to keep a congruent display.
+Removed 15px margin for scroll.
+
+* Added HTML examples and created build.
+
+* Upped version.">)</a>
+      </div>
+
+    <div class="commit-tease-contributors">
+      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
+        <strong>5</strong>
+         contributors
+      </button>
+          <a class="avatar-link tooltipped tooltipped-s" aria-label="ashleydw" href="/ashleydw/lightbox/commits/master/dist/ekko-lightbox.js.map?author=ashleydw"><img alt="@ashleydw" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/844437?s=40&amp;v=4" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="nzphoenix" href="/ashleydw/lightbox/commits/master/dist/ekko-lightbox.js.map?author=nzphoenix"><img alt="@nzphoenix" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/12363234?s=40&amp;v=4" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="RafaPolit" href="/ashleydw/lightbox/commits/master/dist/ekko-lightbox.js.map?author=RafaPolit"><img alt="@RafaPolit" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/4309019?s=40&amp;v=4" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="tobilen" href="/ashleydw/lightbox/commits/master/dist/ekko-lightbox.js.map?author=tobilen"><img alt="@tobilen" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/8217788?s=40&amp;v=4" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="Andrinoid" href="/ashleydw/lightbox/commits/master/dist/ekko-lightbox.js.map?author=Andrinoid"><img alt="@Andrinoid" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/7255160?s=40&amp;v=4" width="20" /> </a>
+
+
+    </div>
+
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list" data-facebox-id="facebox-description">
+          <li class="facebox-user-list-item">
+            <img alt="@ashleydw" height="24" src="https://avatars3.githubusercontent.com/u/844437?s=48&amp;v=4" width="24" />
+            <a href="/ashleydw">ashleydw</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@nzphoenix" height="24" src="https://avatars1.githubusercontent.com/u/12363234?s=48&amp;v=4" width="24" />
+            <a href="/nzphoenix">nzphoenix</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@RafaPolit" height="24" src="https://avatars1.githubusercontent.com/u/4309019?s=48&amp;v=4" width="24" />
+            <a href="/RafaPolit">RafaPolit</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@tobilen" height="24" src="https://avatars3.githubusercontent.com/u/8217788?s=48&amp;v=4" width="24" />
+            <a href="/tobilen">tobilen</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@Andrinoid" height="24" src="https://avatars3.githubusercontent.com/u/7255160?s=48&amp;v=4" width="24" />
+            <a href="/Andrinoid">Andrinoid</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="file">
+    <div class="file-header">
+  <div class="file-actions">
+
+    <div class="BtnGroup">
+      <a href="/ashleydw/lightbox/raw/master/dist/ekko-lightbox.js.map" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/ashleydw/lightbox/blame/master/dist/ekko-lightbox.js.map" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
+      <a href="/ashleydw/lightbox/commits/master/dist/ekko-lightbox.js.map" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+    </div>
+
+        <a class="btn-octicon tooltipped tooltipped-nw"
+           href="https://desktop.github.com"
+           aria-label="Open this file in GitHub Desktop"
+           data-ga-click="Repository, open with desktop, type:mac">
+            <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
+        </a>
+
+        <button type="button" class="btn-octicon disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+        </button>
+        <button type="button" class="btn-octicon btn-octicon-danger disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+        </button>
+  </div>
+
+  <div class="file-info">
+      1 lines (1 sloc)
+      <span class="file-info-divider"></span>
+    43.9 KB
+  </div>
+</div>
+
+    
+
+  <div itemprop="text" class="blob-wrapper data type-text">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line">{&quot;version&quot;:3,&quot;sources&quot;:[&quot;../ekko-lightbox.js&quot;],&quot;names&quot;:[],&quot;mappings&quot;:&quot;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&quot;,&quot;file&quot;:&quot;ekko-lightbox.js&quot;,&quot;sourcesContent&quot;:[&quot;const Lightbox = (($) =&gt; {\n\n\tconst NAME = &#39;ekkoLightbox&#39;\n\tconst JQUERY_NO_CONFLICT = $.fn[NAME]\n\n\tconst Default = {\n\t\ttitle: &#39;&#39;,\n\t\tfooter: &#39;&#39;,\n\t\tmaxWidth: 9999,\n\t\tmaxHeight: 9999,\n\t\tshowArrows: true, //display the left / right arrows or not\n\t\twrapping: true, //if true, gallery loops infinitely\n\t\ttype: null, //force the lightbox into image / youtube mode. if null, or not image|youtube|vimeo; detect it\n\t\talwaysShowClose: false, //always show the close button, even if there is no title\n\t\tloadingMessage: &#39;&lt;div class=\&quot;ekko-lightbox-loader\&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#39;, // http://tobiasahlin.com/spinkit/\n\t\tleftArrow: &#39;&lt;span&gt;&amp;#10094;&lt;/span&gt;&#39;,\n\t\trightArrow: &#39;&lt;span&gt;&amp;#10095;&lt;/span&gt;&#39;,\n\t\tstrings: {\n\t\t\tclose: &#39;Close&#39;,\n\t\t\tfail: &#39;Failed to load image:&#39;,\n\t\t\ttype: &#39;Could not detect remote target type. Force the type using data-type&#39;,\n\t\t},\n\t\tdoc: document, // if in an iframe can specify top.document\n\t\tonShow() {},\n\t\tonShown() {},\n\t\tonHide() {},\n\t\tonHidden() {},\n\t\tonNavigate() {},\n\t\tonContentLoaded() {}\n\t}\n\n\tclass Lightbox {\n\n\t\t/**\n\n\t    Class properties:\n\n\t\t _$element: null -&gt; the &lt;a&gt; element currently being displayed\n\t\t _$modal: The bootstrap modal generated\n\t\t    _$modalDialog: The .modal-dialog\n\t\t    _$modalContent: The .modal-content\n\t\t    _$modalBody: The .modal-body\n\t\t    _$modalHeader: The .modal-header\n\t\t    _$modalFooter: The .modal-footer\n\t\t _$lightboxContainerOne: Container of the first lightbox element\n\t\t _$lightboxContainerTwo: Container of the second lightbox element\n\t\t _$lightboxBody: First element in the container\n\t\t _$modalArrows: The overlayed arrows container\n\n\t\t _$galleryItems: Other &lt;a&gt;&#39;s available for this gallery\n\t\t _galleryName: Name of the current data(&#39;gallery&#39;) showing\n\t\t _galleryIndex: The current index of the _$galleryItems being shown\n\n\t\t _config: {} the options for the modal\n\t\t _modalId: unique id for the current lightbox\n\t\t _padding / _border: CSS properties for the modal container; these are used to calculate the available space for the content\n\n\t\t */\n\n\t\tstatic get Default() {\n\t\t\treturn Default\n\t\t}\n\n\t\tconstructor($element, config) {\n\t\t\tthis._config = $.extend({}, Default, config)\n\t\t\tthis._$modalArrows = null\n\t\t\tthis._galleryIndex = 0\n\t\t\tthis._galleryName = null\n\t\t\tthis._padding = null\n\t\t\tthis._border = null\n\t\t\tthis._titleIsShown = false\n\t\t\tthis._footerIsShown = false\n\t\t\tthis._wantedWidth = 0\n\t\t\tthis._wantedHeight = 0\n\t\t\tthis._touchstartX = 0\n\t\t\tthis._touchendX = 0\n\n\t\t\tthis._modalId = `ekkoLightbox-${Math.floor((Math.random() * 1000) + 1)}`;\n\t\t\tthis._$element = $element instanceof jQuery ? $element : $($element)\n\n\t\t\tthis._isBootstrap3 = $.fn.modal.Constructor.VERSION[0] == 3;\n\n\t\t\tlet h4 = `&lt;h4 class=\&quot;modal-title\&quot;&gt;${this._config.title || \&quot;&amp;nbsp;\&quot;}&lt;/h4&gt;`;\n\t\t\tlet btn = `&lt;button type=\&quot;button\&quot; class=\&quot;close\&quot; data-dismiss=\&quot;modal\&quot; aria-label=\&quot;${this._config.strings.close}\&quot;&gt;&lt;span aria-hidden=\&quot;true\&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;`;\n\n\t\t\tlet header = `&lt;div class=\&quot;modal-header${this._config.title || this._config.alwaysShowClose ? &#39;&#39; : &#39; hide&#39;}\&quot;&gt;`+(this._isBootstrap3 ? btn+h4 : h4+btn)+`&lt;/div&gt;`;\n\t\t\tlet footer = `&lt;div class=\&quot;modal-footer${this._config.footer ? &#39;&#39; : &#39; hide&#39;}\&quot;&gt;${this._config.footer || \&quot;&amp;nbsp;\&quot;}&lt;/div&gt;`;\n\t\t\tlet body = &#39;&lt;div class=\&quot;modal-body\&quot;&gt;&lt;div class=\&quot;ekko-lightbox-container\&quot;&gt;&lt;div class=\&quot;ekko-lightbox-item fade in show\&quot;&gt;&lt;/div&gt;&lt;div class=\&quot;ekko-lightbox-item fade\&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#39;\n\t\t\tlet dialog = `&lt;div class=\&quot;modal-dialog\&quot; role=\&quot;document\&quot;&gt;&lt;div class=\&quot;modal-content\&quot;&gt;${header}${body}${footer}&lt;/div&gt;&lt;/div&gt;`\n\t\t\t$(this._config.doc.body).append(`&lt;div id=\&quot;${this._modalId}\&quot; class=\&quot;ekko-lightbox modal fade\&quot; tabindex=\&quot;-1\&quot; tabindex=\&quot;-1\&quot; role=\&quot;dialog\&quot; aria-hidden=\&quot;true\&quot;&gt;${dialog}&lt;/div&gt;`)\n\n\t\t\tthis._$modal = $(`#${this._modalId}`, this._config.doc)\n\t\t\tthis._$modalDialog = this._$modal.find(&#39;.modal-dialog&#39;).first()\n\t\t\tthis._$modalContent = this._$modal.find(&#39;.modal-content&#39;).first()\n\t\t\tthis._$modalBody = this._$modal.find(&#39;.modal-body&#39;).first()\n\t\t\tthis._$modalHeader = this._$modal.find(&#39;.modal-header&#39;).first()\n\t\t\tthis._$modalFooter = this._$modal.find(&#39;.modal-footer&#39;).first()\n\n\t\t\tthis._$lightboxContainer = this._$modalBody.find(&#39;.ekko-lightbox-container&#39;).first()\n\t\t\tthis._$lightboxBodyOne = this._$lightboxContainer.find(&#39;&gt; div:first-child&#39;).first()\n\t\t\tthis._$lightboxBodyTwo = this._$lightboxContainer.find(&#39;&gt; div:last-child&#39;).first()\n\n\t\t\tthis._border = this._calculateBorders()\n\t\t\tthis._padding = this._calculatePadding()\n\n\t\t\tthis._galleryName = this._$element.data(&#39;gallery&#39;)\n\t\t\tif (this._galleryName) {\n\t\t\t\tthis._$galleryItems = $(document.body).find(`*[data-gallery=\&quot;${this._galleryName}\&quot;]`)\n\t\t\t\tthis._galleryIndex = this._$galleryItems.index(this._$element)\n\t\t\t\t$(document).on(&#39;keydown.ekkoLightbox&#39;, this._navigationalBinder.bind(this))\n\n\t\t\t\t// add the directional arrows to the modal\n\t\t\t\tif (this._config.showArrows &amp;&amp; this._$galleryItems.length &gt; 1) {\n\t\t\t\t\tthis._$lightboxContainer.append(`&lt;div class=\&quot;ekko-lightbox-nav-overlay\&quot;&gt;&lt;a href=\&quot;#\&quot;&gt;${this._config.leftArrow}&lt;/a&gt;&lt;a href=\&quot;#\&quot;&gt;${this._config.rightArrow}&lt;/a&gt;&lt;/div&gt;`)\n\t\t\t\t\tthis._$modalArrows = this._$lightboxContainer.find(&#39;div.ekko-lightbox-nav-overlay&#39;).first()\n\t\t\t\t\tthis._$lightboxContainer.on(&#39;click&#39;, &#39;a:first-child&#39;, event =&gt; {\n\t\t\t\t\t\tevent.preventDefault()\n\t\t\t\t\t\treturn this.navigateLeft()\n\t\t\t\t\t})\n\t\t\t\t\tthis._$lightboxContainer.on(&#39;click&#39;, &#39;a:last-child&#39;, event =&gt; {\n\t\t\t\t\t\tevent.preventDefault()\n\t\t\t\t\t\treturn this.navigateRight()\n\t\t\t\t\t})\n\t\t\t\t\tthis.updateNavigation()\n\t\t\t\t}\n\t\t\t}\n\n\t\t\tthis._$modal\n\t\t\t.on(&#39;show.bs.modal&#39;, this._config.onShow.bind(this))\n\t\t\t.on(&#39;shown.bs.modal&#39;, () =&gt; {\n\t\t\t\tthis._toggleLoading(true)\n\t\t\t\tthis._handle()\n\t\t\t\treturn this._config.onShown.call(this)\n\t\t\t})\n\t\t\t.on(&#39;hide.bs.modal&#39;, this._config.onHide.bind(this))\n\t\t\t.on(&#39;hidden.bs.modal&#39;, () =&gt; {\n\t\t\t\tif (this._galleryName) {\n\t\t\t\t\t$(document).off(&#39;keydown.ekkoLightbox&#39;)\n\t\t\t\t\t$(window).off(&#39;resize.ekkoLightbox&#39;)\n\t\t\t\t}\n\t\t\t\tthis._$modal.remove()\n\t\t\t\treturn this._config.onHidden.call(this)\n\t\t\t})\n\t\t\t.modal(this._config)\n\n\t\t\t$(window).on(&#39;resize.ekkoLightbox&#39;, () =&gt; {\n\t\t\t\tthis._resize(this._wantedWidth, this._wantedHeight)\n\t\t\t})\n\t\t\tthis._$lightboxContainer\n\t\t\t.on(&#39;touchstart&#39;, () =&gt; {\n\t\t\t\tthis._touchstartX = event.changedTouches[0].screenX;\n\n\t\t\t})\n\t\t\t.on(&#39;touchend&#39;, () =&gt; {\n\t\t\t\tthis._touchendX = event.changedTouches[0].screenX;\n\t\t\t    this._swipeGesure();\n\t\t\t})\n\t\t}\n\n\t\telement() {\n\t\t\treturn this._$element;\n\t\t}\n\n\t\tmodal() {\n\t\t\treturn this._$modal;\n\t\t}\n\n\t\tnavigateTo(index) {\n\n\t\t\tif (index &lt; 0 || index &gt; this._$galleryItems.length-1)\n\t\t\t\treturn this\n\n\t\t\tthis._galleryIndex = index\n\n\t\t\tthis.updateNavigation()\n\n\t\t\tthis._$element = $(this._$galleryItems.get(this._galleryIndex))\n\t\t\tthis._handle();\n\t\t}\n\n\t\tnavigateLeft() {\n\n\t\t\tif(!this._$galleryItems)\n\t\t\t\treturn;\n\n\t\t\tif (this._$galleryItems.length === 1)\n\t\t\t\treturn\n\n\t\t\tif (this._galleryIndex === 0) {\n\t\t\t\tif (this._config.wrapping)\n\t\t\t\t\tthis._galleryIndex = this._$galleryItems.length - 1\n\t\t\t\telse\n\t\t\t\t\treturn\n\t\t\t}\n\t\t\telse //circular\n\t\t\t\tthis._galleryIndex--\n\n\t\t\tthis._config.onNavigate.call(this, &#39;left&#39;, this._galleryIndex)\n\t\t\treturn this.navigateTo(this._galleryIndex)\n\t\t}\n\n\t\tnavigateRight() {\n\n\t\t\tif(!this._$galleryItems)\n\t\t\t\treturn;\n\n\t\t\tif (this._$galleryItems.length === 1)\n\t\t\t\treturn\n\n\t\t\tif (this._galleryIndex === this._$galleryItems.length - 1) {\n\t\t\t\tif (this._config.wrapping)\n\t\t\t\t\tthis._galleryIndex = 0\n\t\t\t\telse\n\t\t\t\t\treturn\n\t\t\t}\n\t\t\telse //circular\n\t\t\t\tthis._galleryIndex++\n\n\t\t\tthis._config.onNavigate.call(this, &#39;right&#39;, this._galleryIndex)\n\t\t\treturn this.navigateTo(this._galleryIndex)\n\t\t}\n\n\t\tupdateNavigation() {\n\t\t\tif (!this._config.wrapping) {\n\t\t\t\tlet $nav = this._$lightboxContainer.find(&#39;div.ekko-lightbox-nav-overlay&#39;)\n\t\t\t\tif (this._galleryIndex === 0)\n\t\t\t\t\t$nav.find(&#39;a:first-child&#39;).addClass(&#39;disabled&#39;)\n\t\t\t\telse\n\t\t\t\t\t$nav.find(&#39;a:first-child&#39;).removeClass(&#39;disabled&#39;)\n\n\t\t\t\tif (this._galleryIndex === this._$galleryItems.length - 1)\n\t\t\t\t\t$nav.find(&#39;a:last-child&#39;).addClass(&#39;disabled&#39;)\n\t\t\t\telse\n\t\t\t\t\t$nav.find(&#39;a:last-child&#39;).removeClass(&#39;disabled&#39;)\n\t\t\t}\n\t\t}\n\n\t\tclose() {\n\t\t\treturn this._$modal.modal(&#39;hide&#39;);\n\t\t}\n\n\t\t// helper private methods\n\t\t_navigationalBinder(event) {\n\t\t\tevent = event || window.event;\n\t\t\tif (event.keyCode === 39)\n\t\t\t\treturn this.navigateRight()\n\t\t\tif (event.keyCode === 37)\n\t\t\t\treturn this.navigateLeft()\n\t\t}\n\n\t\t// type detection private methods\n\t\t_detectRemoteType(src, type) {\n\n\t\t\ttype = type || false;\n\n\t\t\tif(!type &amp;&amp; this._isImage(src))\n\t\t\t\ttype = &#39;image&#39;;\n\t\t\tif(!type &amp;&amp; this._getYoutubeId(src))\n\t\t\t\ttype = &#39;youtube&#39;;\n\t\t\tif(!type &amp;&amp; this._getVimeoId(src))\n\t\t\t\ttype = &#39;vimeo&#39;;\n\t\t\tif(!type &amp;&amp; this._getInstagramId(src))\n\t\t\t\ttype = &#39;instagram&#39;;\n\n\t\t\tif(!type || [&#39;image&#39;, &#39;youtube&#39;, &#39;vimeo&#39;, &#39;instagram&#39;, &#39;video&#39;, &#39;url&#39;].indexOf(type) &lt; 0)\n\t\t\t\ttype = &#39;url&#39;;\n\n\t\t\treturn type;\n\t\t}\n\n\t\t_isImage(string) {\n\t\t\treturn string &amp;&amp; string.match(/(^data:image\\/.*,)|(\\.(jp(e|g|eg)|gif|png|bmp|webp|svg)((\\?|#).*)?$)/i)\n\t\t}\n\n\t\t_containerToUse() {\n\t\t\t// if currently showing an image, fade it out and remove\n\t\t\tlet $toUse = this._$lightboxBodyTwo\n\t\t\tlet $current = this._$lightboxBodyOne\n\n\t\t\tif(this._$lightboxBodyTwo.hasClass(&#39;in&#39;)) {\n\t\t\t\t$toUse = this._$lightboxBodyOne\n\t\t\t\t$current = this._$lightboxBodyTwo\n\t\t\t}\n\n\t\t\t$current.removeClass(&#39;in show&#39;)\n\t\t\tsetTimeout(() =&gt; {\n\t\t\t\tif(!this._$lightboxBodyTwo.hasClass(&#39;in&#39;))\n\t\t\t\t\tthis._$lightboxBodyTwo.empty()\n\t\t\t\tif(!this._$lightboxBodyOne.hasClass(&#39;in&#39;))\n\t\t\t\t\tthis._$lightboxBodyOne.empty()\n\t\t\t}, 500)\n\n\t\t\t$toUse.addClass(&#39;in show&#39;)\n\t\t\treturn $toUse\n\t\t}\n\n\t\t_handle() {\n\n\t\t\tlet $toUse = this._containerToUse()\n\t\t\tthis._updateTitleAndFooter()\n\n\t\t\tlet currentRemote = this._$element.attr(&#39;data-remote&#39;) || this._$element.attr(&#39;href&#39;)\n\t\t\tlet currentType = this._detectRemoteType(currentRemote, this._$element.attr(&#39;data-type&#39;) || false)\n\n\t\t\tif([&#39;image&#39;, &#39;youtube&#39;, &#39;vimeo&#39;, &#39;instagram&#39;, &#39;video&#39;, &#39;url&#39;].indexOf(currentType) &lt; 0)\n\t\t\t\treturn this._error(this._config.strings.type)\n\n\t\t\tswitch(currentType) {\n\t\t\t\tcase &#39;image&#39;:\n\t\t\t\t\tthis._preloadImage(currentRemote, $toUse)\n\t\t\t\t\tthis._preloadImageByIndex(this._galleryIndex, 3)\n\t\t\t\t\tbreak;\n\t\t\t\tcase &#39;youtube&#39;:\n\t\t\t\t\tthis._showYoutubeVideo(currentRemote, $toUse);\n\t\t\t\t\tbreak;\n\t\t\t\tcase &#39;vimeo&#39;:\n\t\t\t\t\tthis._showVimeoVideo(this._getVimeoId(currentRemote), $toUse);\n\t\t\t\t\tbreak;\n\t\t\t\tcase &#39;instagram&#39;:\n\t\t\t\t\tthis._showInstagramVideo(this._getInstagramId(currentRemote), $toUse);\n\t\t\t\t\tbreak;\n\t\t\t\tcase &#39;video&#39;:\n\t\t\t\t\tthis._showHtml5Video(currentRemote, $toUse);\n\t\t\t\t\tbreak;\n\t\t\t\tdefault: // url\n\t\t\t\t\tthis._loadRemoteContent(currentRemote, $toUse);\n\t\t\t\t\tbreak;\n\t\t\t}\n\n\t\t\treturn this;\n\t\t}\n\n\t\t_getYoutubeId(string) {\n\t\t\tif(!string)\n\t\t\t\treturn false;\n\t\t\tlet matches = string.match(/^.*(youtu.be\\/|v\\/|u\\/\\w\\/|embed\\/|watch\\?v=|\\&amp;v=)([^#\\&amp;\\?]*).*/)\n\t\t\treturn (matches &amp;&amp; matches[2].length === 11) ? matches[2] : false\n\t\t}\n\n\t\t_getVimeoId(string) {\n\t\t\treturn string &amp;&amp; string.indexOf(&#39;vimeo&#39;) &gt; 0 ? string : false\n\t\t}\n\n\t\t_getInstagramId(string) {\n\t\t\treturn string &amp;&amp; string.indexOf(&#39;instagram&#39;) &gt; 0 ? string : false\n\t\t}\n\n\t\t// layout private methods\n\t\t_toggleLoading(show) {\n\t\t\tshow = show || false\n\t\t\tif(show) {\n\t\t\t\tthis._$modalDialog.css(&#39;display&#39;, &#39;none&#39;)\n\t\t\t\tthis._$modal.removeClass(&#39;in show&#39;)\n\t\t\t\t$(&#39;.modal-backdrop&#39;).append(this._config.loadingMessage)\n\t\t\t}\n\t\t\telse {\n\t\t\t\tthis._$modalDialog.css(&#39;display&#39;, &#39;block&#39;)\n\t\t\t\tthis._$modal.addClass(&#39;in show&#39;)\n\t\t\t\t$(&#39;.modal-backdrop&#39;).find(&#39;.ekko-lightbox-loader&#39;).remove()\n\t\t\t}\n\t\t\treturn this;\n\t\t}\n\n\t\t_calculateBorders() {\n\t\t\treturn {\n\t\t\t\ttop: this._totalCssByAttribute(&#39;border-top-width&#39;),\n\t\t\t\tright: this._totalCssByAttribute(&#39;border-right-width&#39;),\n\t\t\t\tbottom: this._totalCssByAttribute(&#39;border-bottom-width&#39;),\n\t\t\t\tleft: this._totalCssByAttribute(&#39;border-left-width&#39;),\n\t\t\t}\n\t\t}\n\n\t\t_calculatePadding() {\n\t\t\treturn {\n\t\t\t\ttop: this._totalCssByAttribute(&#39;padding-top&#39;),\n\t\t\t\tright: this._totalCssByAttribute(&#39;padding-right&#39;),\n\t\t\t\tbottom: this._totalCssByAttribute(&#39;padding-bottom&#39;),\n\t\t\t\tleft: this._totalCssByAttribute(&#39;padding-left&#39;),\n\t\t\t}\n\t\t}\n\n\t\t_totalCssByAttribute(attribute) {\n\t\t\treturn parseInt(this._$modalDialog.css(attribute), 10) +\n\t\t\t\tparseInt(this._$modalContent.css(attribute), 10) +\n\t\t\t\tparseInt(this._$modalBody.css(attribute), 10)\n\t\t}\n\n\t\t_updateTitleAndFooter() {\n\t\t\tlet title = this._$element.data(&#39;title&#39;) || \&quot;\&quot;\n\t\t\tlet caption = this._$element.data(&#39;footer&#39;) || \&quot;\&quot;\n\n\t\t\tthis._titleIsShown = false\n\t\t\tif (title || this._config.alwaysShowClose) {\n\t\t\t\tthis._titleIsShown = true\n\t\t\t\tthis._$modalHeader.css(&#39;display&#39;, &#39;&#39;).find(&#39;.modal-title&#39;).html(title || \&quot;&amp;nbsp;\&quot;)\n\t\t\t}\n\t\t\telse\n\t\t\t\tthis._$modalHeader.css(&#39;display&#39;, &#39;none&#39;)\n\n\t\t\tthis._footerIsShown = false\n\t\t\tif (caption) {\n\t\t\t\tthis._footerIsShown = true\n\t\t\t\tthis._$modalFooter.css(&#39;display&#39;, &#39;&#39;).html(caption)\n\t\t\t}\n\t\t\telse\n\t\t\t\tthis._$modalFooter.css(&#39;display&#39;, &#39;none&#39;)\n\n\t\t\treturn this;\n\t\t}\n\n\t\t_showYoutubeVideo(remote, $containerForElement) {\n\t\t\tlet id = this._getYoutubeId(remote)\n\t\t\tlet query = remote.indexOf(&#39;&amp;&#39;) &gt; 0 ? remote.substr(remote.indexOf(&#39;&amp;&#39;)) : &#39;&#39;\n\t\t\tlet width = this._$element.data(&#39;width&#39;) || 560\n\t\t\tlet height = this._$element.data(&#39;height&#39;) ||  width / ( 560/315 )\n\t\t\treturn this._showVideoIframe(\n\t\t\t\t`//www.youtube.com/embed/${id}?badge=0&amp;autoplay=1&amp;html5=1${query}`,\n\t\t\t\twidth,\n\t\t\t\theight,\n\t\t\t\t$containerForElement\n\t\t\t);\n\t\t}\n\n\t\t_showVimeoVideo(id, $containerForElement) {\n\t\t\tlet width = this._$element.data(&#39;width&#39;) || 500\n\t\t\tlet height = this._$element.data(&#39;height&#39;) ||  width / ( 560/315 )\n\t\t\treturn this._showVideoIframe(id + &#39;?autoplay=1&#39;, width, height, $containerForElement)\n\t\t}\n\n\t\t_showInstagramVideo(id, $containerForElement) {\n\t\t\t// instagram load their content into iframe&#39;s so this can be put straight into the element\n\t\t\tlet width = this._$element.data(&#39;width&#39;) || 612\n\t\t\tlet height = width + 80;\n\t\t\tid = id.substr(-1) !== &#39;/&#39; ? id + &#39;/&#39; : id; // ensure id has trailing slash\n\t\t\t$containerForElement.html(`&lt;iframe width=\&quot;${width}\&quot; height=\&quot;${height}\&quot; src=\&quot;${id}embed/\&quot; frameborder=\&quot;0\&quot; allowfullscreen&gt;&lt;/iframe&gt;`);\n\t\t\tthis._resize(width, height);\n\t\t\tthis._config.onContentLoaded.call(this);\n\t\t\tif (this._$modalArrows) //hide the arrows when showing video\n\t\t\t\tthis._$modalArrows.css(&#39;display&#39;, &#39;none&#39;);\n\t\t\tthis._toggleLoading(false);\n\t\t\treturn this;\n\t\t}\n\n\t\t_showVideoIframe(url, width, height, $containerForElement) { // should be used for videos only. for remote content use loadRemoteContent (data-type=url)\n\t\t\theight = height || width; // default to square\n\t\t\t$containerForElement.html(`&lt;div class=\&quot;embed-responsive embed-responsive-16by9\&quot;&gt;&lt;iframe width=\&quot;${width}\&quot; height=\&quot;${height}\&quot; src=\&quot;${url}\&quot; frameborder=\&quot;0\&quot; allowfullscreen class=\&quot;embed-responsive-item\&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;`);\n\t\t\tthis._resize(width, height);\n\t\t\tthis._config.onContentLoaded.call(this);\n\t\t\tif (this._$modalArrows)\n\t\t\t\tthis._$modalArrows.css(&#39;display&#39;, &#39;none&#39;); //hide the arrows when showing video\n\t\t\tthis._toggleLoading(false);\n\t\t\treturn this;\n\t\t}\n\n\t\t_showHtml5Video(url, $containerForElement) { // should be used for videos only. for remote content use loadRemoteContent (data-type=url)\n\t\t\tlet width = this._$element.data(&#39;width&#39;) || 560\n\t\t\tlet height = this._$element.data(&#39;height&#39;) ||  width / ( 560/315 )\n\t\t\t$containerForElement.html(`&lt;div class=\&quot;embed-responsive embed-responsive-16by9\&quot;&gt;&lt;video width=\&quot;${width}\&quot; height=\&quot;${height}\&quot; src=\&quot;${url}\&quot; preload=\&quot;auto\&quot; autoplay controls class=\&quot;embed-responsive-item\&quot;&gt;&lt;/video&gt;&lt;/div&gt;`);\n\t\t\tthis._resize(width, height);\n\t\t\tthis._config.onContentLoaded.call(this);\n\t\t\tif (this._$modalArrows)\n\t\t\t\tthis._$modalArrows.css(&#39;display&#39;, &#39;none&#39;); //hide the arrows when showing video\n\t\t\tthis._toggleLoading(false);\n\t\t\treturn this;\n\t\t}\n\n\t\t_loadRemoteContent(url, $containerForElement) {\n\t\t\tlet width = this._$element.data(&#39;width&#39;) || 560;\n\t\t\tlet height = this._$element.data(&#39;height&#39;) || 560;\n\n\t\t\tlet disableExternalCheck = this._$element.data(&#39;disableExternalCheck&#39;) || false;\n\t\t\tthis._toggleLoading(false);\n\n\t\t\t// external urls are loading into an iframe\n\t\t\t// local ajax can be loaded into the container itself\n\t\t\tif (!disableExternalCheck &amp;&amp; !this._isExternal(url)) {\n\t\t\t\t$containerForElement.load(url, $.proxy(() =&gt; {\n\t\t\t\t\treturn this._$element.trigger(&#39;loaded.bs.modal&#39;);l\n\t\t\t\t}));\n\n\t\t\t} else {\n\t\t\t\t$containerForElement.html(`&lt;iframe src=\&quot;${url}\&quot; frameborder=\&quot;0\&quot; allowfullscreen&gt;&lt;/iframe&gt;`);\n\t\t\t\tthis._config.onContentLoaded.call(this);\n\t\t\t}\n\n\t\t\tif (this._$modalArrows) //hide the arrows when remote content\n\t\t\t\tthis._$modalArrows.css(&#39;display&#39;, &#39;none&#39;)\n\n\t\t\tthis._resize(width, height);\n\t\t\treturn this;\n\t\t}\n\n\t\t_isExternal(url) {\n\t\t\tlet match = url.match(/^([^:\\/?#]+:)?(?:\\/\\/([^\\/?#]*))?([^?#]+)?(\\?[^#]*)?(#.*)?/);\n\t\t\tif (typeof match[1] === \&quot;string\&quot; &amp;&amp; match[1].length &gt; 0 &amp;&amp; match[1].toLowerCase() !== location.protocol)\n\t\t\t\treturn true;\n\n\t\t\tif (typeof match[2] === \&quot;string\&quot; &amp;&amp; match[2].length &gt; 0 &amp;&amp; match[2].replace(new RegExp(`:(${{\n\t\t\t\t\t\&quot;http:\&quot;: 80,\n\t\t\t\t\t\&quot;https:\&quot;: 443\n\t\t\t\t}[location.protocol]})?$`), \&quot;\&quot;) !== location.host)\n\t\t\t\treturn true;\n\n\t\t\treturn false;\n\t\t}\n\n\t\t_error( message ) {\n\t\t\tconsole.error(message);\n\t\t\tthis._containerToUse().html(message);\n\t\t\tthis._resize(300, 300);\n\t\t\treturn this;\n\t\t}\n\n\t\t_preloadImageByIndex(startIndex, numberOfTimes) {\n\n\t\t\tif(!this._$galleryItems)\n\t\t\t\treturn;\n\n\t\t\tlet next = $(this._$galleryItems.get(startIndex), false)\n\t\t\tif(typeof next == &#39;undefined&#39;)\n\t\t\t\treturn\n\n\t\t\tlet src = next.attr(&#39;data-remote&#39;) || next.attr(&#39;href&#39;)\n\t\t\tif (next.attr(&#39;data-type&#39;) === &#39;image&#39; || this._isImage(src))\n\t\t\t\tthis._preloadImage(src, false)\n\n\t\t\tif(numberOfTimes &gt; 0)\n\t\t\t\treturn this._preloadImageByIndex(startIndex + 1, numberOfTimes-1);\n\t\t}\n\n\t\t_preloadImage( src, $containerForImage) {\n\n\t\t\t$containerForImage = $containerForImage || false\n\n\t\t\tlet img = new Image();\n\t\t\tif ($containerForImage) {\n\n\t\t\t\t// if loading takes &gt; 200ms show a loader\n\t\t\t\tlet loadingTimeout = setTimeout(() =&gt; {\n\t\t\t\t\t$containerForImage.append(this._config.loadingMessage)\n\t\t\t\t}, 200)\n\n\t\t\t\timg.onload = () =&gt; {\n\t\t\t\t\tif(loadingTimeout)\n\t\t\t\t\t\tclearTimeout(loadingTimeout)\n\t\t\t\t\tloadingTimeout = null;\n\t\t\t\t\tlet image = $(&#39;&lt;img /&gt;&#39;);\n\t\t\t\t\timage.attr(&#39;src&#39;, img.src);\n\t\t\t\t\timage.addClass(&#39;img-fluid&#39;);\n\n\t\t\t\t\t// backward compatibility for bootstrap v3\n\t\t\t\t\timage.css(&#39;width&#39;, &#39;100%&#39;);\n\n\t\t\t\t\t$containerForImage.html(image);\n\t\t\t\t\tif (this._$modalArrows)\n\t\t\t\t\t\tthis._$modalArrows.css(&#39;display&#39;, &#39;&#39;) // remove display to default to css property\n\n\t\t\t\t\tthis._resize(img.width, img.height);\n\t\t\t\t\tthis._toggleLoading(false);\n\t\t\t\t\treturn this._config.onContentLoaded.call(this);\n\t\t\t\t};\n\t\t\t\timg.onerror = () =&gt; {\n\t\t\t\t\tthis._toggleLoading(false);\n\t\t\t\t\treturn this._error(this._config.strings.fail+`  ${src}`);\n\t\t\t\t};\n\t\t\t}\n\n\t\t\timg.src = src;\n\t\t\treturn img;\n\t\t}\n\n\t\t_swipeGesure() {\n\t\t    if (this._touchendX &lt; this._touchstartX) {\n\t\t        return this.navigateRight();\n\t\t    }\n\t\t    if (this._touchendX &gt; this._touchstartX) {\n\t\t        return this.navigateLeft();\n\t\t    }\n\t\t}\n\n\t\t_resize( width, height ) {\n\n\t\t\theight = height || width\n\t\t\tthis._wantedWidth = width\n\t\t\tthis._wantedHeight = height\n\n\t\t\tlet imageAspecRatio = width / height;\n\n\t\t\t// if width &gt; the available space, scale down the expected width and height\n\t\t\tlet widthBorderAndPadding = this._padding.left + this._padding.right + this._border.left + this._border.right\n\n\t\t\t// force 10px margin if window size &gt; 575px\n\t\t\tlet addMargin = this._config.doc.body.clientWidth &gt; 575 ? 20 : 0\n\t\t\tlet discountMargin = this._config.doc.body.clientWidth &gt; 575 ? 0 : 20\n\n\t\t\tlet maxWidth = Math.min(width + widthBorderAndPadding, this._config.doc.body.clientWidth - addMargin, this._config.maxWidth)\n\n\t\t\tif((width + widthBorderAndPadding) &gt; maxWidth) {\n\t\t\t\theight = (maxWidth - widthBorderAndPadding - discountMargin) / imageAspecRatio;\n\t\t\t\twidth = maxWidth\n\t\t\t} else\n\t\t\t\twidth = (width + widthBorderAndPadding)\n\n\t\t\tlet headerHeight = 0,\n\t\t\t    footerHeight = 0\n\n\t\t\t// as the resize is performed the modal is show, the calculate might fail\n\t\t\t// if so, default to the default sizes\n\t\t\tif (this._footerIsShown)\n\t\t\t\tfooterHeight = this._$modalFooter.outerHeight(true) || 55\n\n\t\t\tif (this._titleIsShown)\n\t\t\t\theaderHeight = this._$modalHeader.outerHeight(true) || 67\n\n\t\t\tlet borderPadding = this._padding.top + this._padding.bottom + this._border.bottom + this._border.top\n\n\t\t\t//calculated each time as resizing the window can cause them to change due to Bootstraps fluid margins\n\t\t\tlet margins = parseFloat(this._$modalDialog.css(&#39;margin-top&#39;)) + parseFloat(this._$modalDialog.css(&#39;margin-bottom&#39;));\n\n\t\t\tlet maxHeight = Math.min(height, $(window).height() - borderPadding - margins - headerHeight - footerHeight, this._config.maxHeight - borderPadding - headerHeight - footerHeight);\n\n\t\t\tif(height &gt; maxHeight) {\n\t\t\t\t// if height &gt; the available height, scale down the width\n\t\t\t\twidth = Math.ceil(maxHeight * imageAspecRatio) + widthBorderAndPadding;\n\t\t\t}\n\n\t\t\tthis._$lightboxContainer.css(&#39;height&#39;, maxHeight)\n\t\t\tthis._$modalDialog.css(&#39;flex&#39;, 1).css(&#39;maxWidth&#39;, width);\n\n\t\t\tlet modal = this._$modal.data(&#39;bs.modal&#39;);\n\t\t\tif (modal) {\n\t\t\t\t// v4 method is mistakenly protected\n\t\t\t\ttry {\n\t\t\t\t\tmodal._handleUpdate();\n\t\t\t\t} catch(Exception) {\n\t\t\t\t\tmodal.handleUpdate();\n\t\t\t\t}\n\t\t\t}\n\t\t\treturn this;\n\t\t}\n\n\t\tstatic _jQueryInterface(config) {\n\t\t\tconfig = config || {}\n\t\t\treturn this.each(() =&gt; {\n\t\t\t\tlet $this = $(this)\n\t\t\t\tlet _config = $.extend(\n\t\t\t\t\t{},\n\t\t\t\t\tLightbox.Default,\n\t\t\t\t\t$this.data(),\n\t\t\t\t\ttypeof config === &#39;object&#39; &amp;&amp; config\n\t\t\t\t)\n\n\t\t\t\tnew Lightbox(this, _config)\n\t\t\t})\n\t\t}\n\t}\n\n\n\n\t$.fn[NAME]             = Lightbox._jQueryInterface\n\t$.fn[NAME].Constructor = Lightbox\n\t$.fn[NAME].noConflict  = () =&gt; {\n\t\t$.fn[NAME] = JQUERY_NO_CONFLICT\n\t\treturn Lightbox._jQueryInterface\n\t}\n\n\treturn Lightbox\n\n})(jQuery)\n\nexport default Lightbox\n&quot;]}</td>
+      </tr>
+</table>
+
+  <div class="BlobToolbar position-absolute js-file-line-actions dropdown js-menu-container js-select-menu d-none" aria-hidden="true">
+    <button class="btn-octicon ml-0 px-2 p-0 bg-white border border-gray-dark rounded-1 dropdown-toggle js-menu-target" id="js-file-line-action-button" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Inline file action toolbar" aria-controls="inline-file-actions">
+      <svg aria-hidden="true" class="octicon octicon-kebab-horizontal" height="16" version="1.1" viewBox="0 0 13 16" width="13"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+    </button>
+    <div class="dropdown-menu-content js-menu-content" id="inline-file-actions">
+      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2">
+        <li><a class="js-zeroclipboard dropdown-item" style="cursor:pointer;" id="js-copy-lines" data-original-text="Copy lines">Copy lines</a></li>
+        <li><a class="js-zeroclipboard dropdown-item" id= "js-copy-permalink" style="cursor:pointer;" data-original-text="Copy permalink">Copy permalink</a></li>
+        <li><a href="/ashleydw/lightbox/blame/496f727e324b61938281c48cc0854522cf54bb63/dist/ekko-lightbox.js.map" class="dropdown-item js-update-url-with-hash" id="js-view-git-blame">View git blame</a></li>
+          <li><a href="/ashleydw/lightbox/issues/new" class="dropdown-item" id="js-new-issue">Open new issue</a></li>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+
+  </div>
+
+  <button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="d-none">Jump to Line</button>
+  <div id="jump-to-line" style="display:none">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+      <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+      <button type="submit" class="btn">Go</button>
+</form>  </div>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+      
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2018 <span title="0.11061s from unicorn-172862928-pcn15">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="footer-octicon" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+    <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+    You can't perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha512-WbJQdB53Z1Sax0E7Plrx0OslFU9rd1laJKvNZhyV7Ha8X+2Y6Q/C1ruGvZLz6LFeRt+I+82BoUoJdZxJx1pJ7Q==" src="https://assets-cdn.github.com/assets/frameworks-59b250741e7767549ac7413b3e5af1d0eb25154f6b77595a24abcd661c95ec76bc5fed98e90fc2d6bb86bd92f3e8b15e46df88fbcd81a14a09759c49c75a49ed.js"></script>
+    
+    <script async="async" crossorigin="anonymous" integrity="sha512-SQcYFgPZCZ1rUPpRzGn8ck1rNL/JHlrFNqnxEw6nqGsVI5eP9sJbLWGcyfnCvGyxfuR9gzm4hHSCX9Ask90l2A==" src="https://assets-cdn.github.com/assets/github-4907181603d9099d6b50fa51cc69fc724d6b34bfc91e5ac536a9f1130ea7a86b1523978ff6c25b2d619cc9f9c2bc6cb17ee47d8339b88474825fd02c93dd25d8.js"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+
+  </body>
+</html>
+

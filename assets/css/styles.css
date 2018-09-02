@@ -1,0 +1,208 @@
+/* CSS Document */
+
+header,body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.hero-image {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  background-color: red;
+  opacity: 0.5;
+}
+
+.accordion_toggle {
+	display: block;
+	height: 40px;
+	<!--width: 700px;-->
+	padding: 0 10px 0 10px;
+	line-height: 40px;
+	color: #999999;
+	font-weight: lighter;
+	text-decoration: none;
+	outline: none;
+	font-size: 30px;
+	border-bottom: 2px solid #ffcccc;
+	cursor: pointer;
+	margin: 0 0 0 0;
+	font-family: Courier New, Lucida Console, monospace;
+	background-color: #f2f2f2;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+		
+.accordion_toggle_active {
+	color: #ffffff;
+	border-bottom: 2px solid #ff3300;
+	background-color: #f2f2f2;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+		
+.accordion_content {
+	padding: 0 10px 20px 10px;
+	background-color: #f2f2f2;
+	color: #000000;
+	overflow: hidden;
+	font-size: 16px;
+}
+			
+.accordion_content h2 {
+	margin: 15px 0 5px 10px;
+	color: #0099FF;
+}
+			
+.accordion_content p {
+	line-height: 150%;
+	padding: 5px 10px 15px 10px;
+}
+
+.alec {
+    font-family: Courier New, Lucida Console, monospace;
+	font-size: 70px;
+	font-weight: normal;
+	line-height: 50px;
+	letter-spacing: 4px;
+    margin-left: 45px;
+}
+
+.sublists {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.headlines {
+	display: block;
+	height: 30px;
+	<!--width: 280px; -->
+	padding: 0 10px 0 5px;
+	line-height: 30px;
+	color: #ff5050;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	font-size: 30px;
+	border-bottom: 3px solid #ffcccc;
+	margin: 0 0 0 0;
+	font-family: Courier New, Lucida Console, monospace;
+	background-color: #f2f2f2;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.headline_content {
+	padding: 0 10px 20px 10px;
+	background-color: #f2f2f2;
+	color: #000000;
+	overflow: hidden;
+	font-size: 16px;
+}
+
+
+.techheadlines {
+	display: block;
+	height: 30px;
+	<!--width: 850px;-->
+	padding: 0 10px 0 10px;
+	line-height: 30px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+	outline: none;
+	font-size: 36px;
+	border-bottom: 3px solid #FFFF00;
+	margin: 0 0 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #000000;
+	background-image: url(images/accordion_toggle.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.date {
+	color: #000000;
+	text-align: right;
+	font-size: 14px;
+	padding: 0 0 10px 0;
+	font-weight: bold;
+}
+a:link {
+	color: #333333;
+}
+a:visited {
+	color: #ff5050;
+}
+a:hover {
+	color: #cce0ff;
+}
+a:active {
+	color: #333333;
+}
+
+.navtree a:link {
+	padding: 1px 5px 1px 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #333333;
+	<!--border-bottom-width: 10px;-->
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+	text-decoration: none;
+}
+
+.navtree a:visited {
+	padding: 1px 5px 1px 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #333333;
+	<!--border-bottom-width: 10px;-->
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+	text-decoration: none;
+}
+.navtree a:hover {
+	padding: 1px 5px 1px 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #ffcccc;
+	background-color: #000000;
+	<!--border-bottom-width: 10px;-->
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+	text-decoration: none;
+}
+.navtree a:active {
+	padding: 1px 5px 1px 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #ffcccc;
+	background-color: #333333;
+	<!--border-bottom-width: 10px;-->
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+	text-decoration: none;
+}
