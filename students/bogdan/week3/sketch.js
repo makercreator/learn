@@ -11,7 +11,7 @@ var radius = diameter / 2;
 
 
 function preload(){
-  skills=loadTable("week1.csv", "loaded");
+  skills=loadTable("week3.csv", "loaded");
 }
 
 function setup() {
@@ -40,31 +40,27 @@ function draw() {
   background(100);
   noStroke();
   pieChart(diameter, angles);
-  //info(320, angles); // For info text
   fill(100);
-  ellipse(width/2,height/2,250,250);
+  ellipse(width/4,height/2,250,250);
 
 //OVERALL PERCENT//
   fill(150);
   textAlign(CENTER);
   textSize(80);
-  text(skills.getString(overall,1), 400,225);
-  //print(overall);
+  text(skills.getString(overall,1), 200,190);
+
   
 
 // STUDENT NAME & TITLE //
-  textAlign(LEFT);
+  textAlign(CENTER);
   fill(200);
   textSize(24);
-  text(skills.getString(0,4), 60,40);
-  text(skills.getString(1,4), 60,62);
+  text(skills.getString(1,4), 200,260);
   textSize(12);
-  text(skills.getString(2,4), 60,75);
+  text(skills.getString(2,4), 200,235);
   
   
 }
-
-
 
 
 function pieChart(diameter, data) {
@@ -72,32 +68,19 @@ function pieChart(diameter, data) {
   //change color / slice//
   for (var i = 0; i < data.length; i++) {
 
-  if(value[i] < 100) {
-    fill(0, 200, 255, 255);
-  }
+ 
   //100%//
   if(value[i] == 100) {
     fill(0, 255, 150, 255);
   }
-   //80%//
-  if ((value[i] > 60) && (value[i] < 100)) {
-    fill(0, 250, 250, 255);
-  }
-  // 60% //
-  if ((value[i] > 40) && (value[i] < 60)) {
-    fill(0, 255, 250, 150);
-  }
-  // 40% //
-  if ((value[i] > 1) && (value[i] < 40)) {
-    fill(0, 250, 250, 70);
-  }
+  
   // 0% //
   if(value[i] < 1) {
     fill(150);
   }
 
   //draw slices//
-    arc(width/2, height/2, diameter, diameter, lastAngle, lastAngle-.02 + radians(angles[i])); // divides the pie chart based on how many rows in excell. .02 adds a gap. 
+    arc(width/4, height/2, diameter, diameter, lastAngle, lastAngle-.02 + radians(angles[i])); // divides the pie chart based on how many rows in excell. .02 adds a gap. 
     lastAngle += radians(angles[i]); //each slice starts where the last left off.
   }
 
@@ -127,7 +110,7 @@ for(var i=0; i<value.length; i++) {
     fill(150);
   }
 
-    rect(590, y, x+1, 12);//+1 to show a line when value=0
+  rect(400, y, x+1, 12);x
     
     
 }
@@ -139,8 +122,7 @@ for(var i=0; i<value.length; i++) {
   textSize(10);
   noStroke();
   fill(255);
- 
-  text(skills.getString(i,0), 620, y+10);
+  text(skills.getString(i,0), 430, y+10);
   }
 }
   
