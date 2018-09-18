@@ -39,7 +39,7 @@ function draw() {
   pieChart(diameter, angles);
   //info(320, angles); // For info text
   fill(50);
-  ellipse(width/2,height/2,250,250);
+  ellipse(width/1.5,height/2,250,250);
 
 
 //OVERALL PERCENT//
