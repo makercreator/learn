@@ -21,8 +21,6 @@ function setup() {
   var rowCount=skills.getRowCount()-1; // number of rows -1 to ignore last value (overall)
   for(var i=0; i<rowCount; i++) {
   angles[i]=360/rowCount; // number of slices = circumfrance/number of rows
-  // textX=width/2; // For info text
-  // textY=height/2; // For info text
   }
 
 
@@ -160,7 +158,7 @@ for(var i=0; i<value.length; i++) {
   if(value[i] < 1) {
     fill(150);
   }
-    textSize(9);
+    textSize(10);
     text(skills.getString(i,0), 50, y-5);
     rect(50, y, x+1, 10);//+1 to show a line when value=0
 
