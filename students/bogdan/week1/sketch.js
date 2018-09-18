@@ -111,12 +111,10 @@ for(var i=0; i<value.length; i++) {
 
   rect(50, y, x+1, 12);x
 
-
 }
   endShape()
 
   for(var i=0; i<value.length; i++) {
-
   var y=map(i, 0, value.length, 20, 400);//y position of progress bar descriptors
   textSize(10);
   noStroke();

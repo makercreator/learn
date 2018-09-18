@@ -30,12 +30,6 @@ function setup() {
   //print(overall);
   for(var i=0; i<rowCount; i++) {
   value[i]=skills.getNum(i, 1);
-
-
-
-  // x[i]=skills.getNum(i,2); // For info text
-  //y[i]=skills.getNum(i,3); // For info text
-  // x[i]=diameter+2, angles; // For info text
   }
 }
 
@@ -45,26 +39,25 @@ function draw() {
   pieChart(diameter, angles);
   //info(320, angles); // For info text
   fill(50);
-  ellipse(400,200,250,250);
+  ellipse(width/1.5,height/2,250,250);
+
 
 //OVERALL PERCENT//
   fill(150);
   textAlign(CENTER);
   textSize(80);
-  text(skills.getString(overall,1), 400,225);
-  //print(overall);
+  text(skills.getString(overall,1), width/1.5,250);
+
 
 
 // STUDENT NAME & TITLE //
-  textAlign(LEFT);
+  textAlign(CENTER);
   fill(200);
   textSize(24);
-  text(skills.getString(0,4), 60,40);
-  text(skills.getString(1,4), 60,62);
   textSize(12);
-  text(skills.getString(2,4), 60,75);
+  text(skills.getString(2,4), width/1.5,170);
 
- var lx = (60);
+ var lx = (710);
  var ly = (250);
  textAlign(LEFT);
  fill(200);
@@ -97,9 +90,6 @@ function draw() {
  text("100%", lx+20, ly+100);
 }
 
-
-
-
 function pieChart(diameter, data) {
   var lastAngle = PI+HALF_PI; // start at 12 o'clock
   //change color / slice//
@@ -130,9 +120,10 @@ function pieChart(diameter, data) {
   }
 
   //draw slices//
-    arc(width/2, height/2, diameter, diameter, lastAngle, lastAngle-.02 + radians(angles[i])); // divides the pie chart based on how many rows in excell. .02 adds a gap.
+    arc(width/1.5,height/2, diameter, diameter, lastAngle, lastAngle-.02 + radians(angles[i])); // divides the pie chart based on how many rows in excell. .02 adds a gap.
     lastAngle += radians(angles[i]); //each slice starts where the last left off.
   }
+
 
 beginShape();
 
@@ -170,8 +161,8 @@ for(var i=0; i<value.length; i++) {
     fill(150);
   }
     textSize(9);
-    text(skills.getString(i,0), 620, y-2);
-    rect(620, y, x+1, 10);//+1 to show a line when value=0
+    text(skills.getString(i,0), 50, y-5);
+    rect(50, y, x+1, 10);//+1 to show a line when value=0
 
 
 }
