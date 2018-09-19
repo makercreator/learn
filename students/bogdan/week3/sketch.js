@@ -1,6 +1,4 @@
-\
-//var angles = [];
-//var c = [];
+
 var skills;
 angles=[];
 value=[];
@@ -11,7 +9,7 @@ var radius = diameter / 2;
 
 
 function preload(){
-  skills=loadTable("week2.csv", "loaded");
+  skills=loadTable("week3.csv", "loaded");
 }
 
 function setup() {
@@ -23,8 +21,6 @@ function setup() {
   var rowCount=skills.getRowCount()-1; // number of rows -1 to ignore last value (overall)
   for(var i=0; i<rowCount; i++) {
   angles[i]=360/rowCount; // number of slices = circumfrance/number of rows
-  // textX=width/2; // For info text
-  // textY=height/2; // For info text
   }
 
 
@@ -43,20 +39,19 @@ function draw() {
   fill(50);
   ellipse(width/1.5,height/2,250,250);
 
-//OVERALL PERCENT//
-  fill(150);
-  textAlign(CENTER);
-  textSize(80);
-  text(skills.getString(overall,1), width/1.5,250);
+  //OVERALL PERCENT//
+    fill(150);
+    textAlign(CENTER);
+    textSize(80);
+    text(skills.getString(overall,1), width/1.5,225);
 
 
 
-// STUDENT NAME & TITLE //
-  textAlign(CENTER);
-  fill(200);
-  textSize(24);
-  textSize(12);
-  text(skills.getString(2,4), width/1.5,170);
+  // STUDENT NAME & TITLE //
+    textAlign(CENTER);
+    fill(200);
+    textSize(24);
+    text(skills.getString(0,2), width/1.5,30);
 
 
 }

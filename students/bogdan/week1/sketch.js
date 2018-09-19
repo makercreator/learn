@@ -11,7 +11,7 @@ var radius = diameter / 2;
 
 
 function preload(){
-  skills=loadTable("week2.csv", "loaded");
+  skills=loadTable("week1.csv", "loaded");
 }
 
 function setup() {
@@ -47,7 +47,7 @@ function draw() {
   fill(150);
   textAlign(CENTER);
   textSize(80);
-  text(skills.getString(overall,1), width/1.5,250);
+  text(skills.getString(overall,1), width/1.5,225);
 
 
 
@@ -55,8 +55,7 @@ function draw() {
   textAlign(CENTER);
   fill(200);
   textSize(24);
-  textSize(12);
-  text(skills.getString(2,4), width/1.5,170);
+  text(skills.getString(0,2), width/1.5,30);
 
 
 }
