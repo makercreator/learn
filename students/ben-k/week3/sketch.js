@@ -1,4 +1,6 @@
 
+//var angles = [];
+//var c = [];
 var skills;
 angles=[];
 value=[];
@@ -13,7 +15,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(800, 400);
+  createCanvas(800, 550);
   stroke(150);
   noLoop();  // Run once and stop
 
@@ -21,6 +23,8 @@ function setup() {
   var rowCount=skills.getRowCount()-1; // number of rows -1 to ignore last value (overall)
   for(var i=0; i<rowCount; i++) {
   angles[i]=360/rowCount; // number of slices = circumfrance/number of rows
+  // textX=width/2; // For info text
+  // textY=height/2; // For info text
   }
 
 
@@ -37,23 +41,33 @@ function draw() {
   noStroke();
   pieChart(diameter, angles);
   fill(50);
-  ellipse(width/1.5,height/2,250,250);
+  ellipse(width/1.5,height/2.5,250,250);
 
-  //OVERALL PERCENT//
-    fill(150);
-    textAlign(CENTER);
-    textSize(80);
-    text(skills.getString(overall,1), width/1.5,225);
+//OVERALL PERCENT//
+  fill(150);
+  textAlign(CENTER);
+  textSize(80);
+  text(skills.getString(overall,1), width/1.5,250);
 
 
 
-  // STUDENT NAME & TITLE //
-    textAlign(CENTER);
+// STUDENT NAME & TITLE //
+  textAlign(CENTER);
+  fill(0, 255, 150, 255);
+  textSize(24);
+  text(skills.getString(0,2), width/1.5,30);
+
+  // FEEDBACK //
+    textAlign(LEFT);
     fill(200);
-    textSize(24);
-    text(skills.getString(0,2), width/1.5,30);
-
-
+    textSize(12);
+    fill(0, 255, 150, 255);
+    text(skills.getString(0,3), 20,420);
+    fill(255, 150, 50, 255);
+    text(skills.getString(0,4), 35,440);
+    text(skills.getString(1,4), 35,455);
+    text(skills.getString(2,4), 35,470);
+    text(skills.getString(3,4), 35,485);
 }
 
 
@@ -74,7 +88,7 @@ function pieChart(diameter, data) {
   }
 
   //draw slices//
-    arc(width/1.5, height/2, diameter, diameter, lastAngle, lastAngle-.02 + radians(angles[i])); // divides the pie chart based on how many rows in excell. .02 adds a gap.
+    arc(width/1.5, height/2.5, diameter, diameter, lastAngle, lastAngle-.02 + radians(angles[i])); // divides the pie chart based on how many rows in excell. .02 adds a gap.
     lastAngle += radians(angles[i]); //each slice starts where the last left off.
   }
 
