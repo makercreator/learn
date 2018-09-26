@@ -11,7 +11,7 @@ var radius = diameter / 2;
 
 
 function preload(){
-  skills=loadTable("week1.csv", "loaded");
+  skills=loadTable("skills - week 1.csv", "loaded");
 }
 
 function setup() {
