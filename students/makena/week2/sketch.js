@@ -64,10 +64,10 @@ function draw() {
     fill(0, 255, 150, 255);
     text(skills.getString(0,3), 20,420);
     fill(255, 150, 50, 255);
-    text(skills.getString(1,3), 35,440);
-    text(skills.getString(2,3), 35,455);
-    text(skills.getString(3,3), 35,470);
-    text(skills.getString(4,3), 35,485);
+    text(skills.getString(0,3), 35,440);
+    text(skills.getString(1,3), 35,455);
+    text(skills.getString(2,3), 35,470);
+    text(skills.getString(3,3), 35,485);
 }
 
 
