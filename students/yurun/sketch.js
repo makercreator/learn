@@ -99,21 +99,22 @@ function pieChart(diameter, data) {
     fill(0, 255, 150, 255);
   }
    //80%//
-  if ((value[i] > 60) && (value[i] < 100)) {
+  if ((value[i] > 70) && (value[i] < 100)) {
     fill(0, 250, 250, 255);
   }
   // 60% //
-  if ((value[i] > 40) && (value[i] < 60)) {
+  if ((value[i] > 50) && (value[i] < 70)) {
     fill(0, 255, 250, 150);
   }
   // 40% //
-  if ((value[i] > 1) && (value[i] < 40)) {
+  if ((value[i] > 1) && (value[i] < 50)) {
     fill(0, 250, 250, 70);
   }
   // 0% //
   if(value[i] < 1) {
     fill(150);
   }
+
 
   //draw slices//
     arc(width/1.5,height/2, diameter, diameter, lastAngle, lastAngle-.02 + radians(angles[i])); // divides the pie chart based on how many rows in excell. .02 adds a gap.

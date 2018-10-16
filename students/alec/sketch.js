@@ -92,7 +92,7 @@ function drawLegend() {
 
 //SKILLS//
 
-function drawSkills(diameter, data) {
+function pieChart(diameter, data) {
 
   var lastAngle = PI+HALF_PI; // start at 12 o'clock
   //change color / slice//
@@ -107,20 +107,21 @@ function drawSkills(diameter, data) {
   }
    //80%//
   if ((value[i] > 70) && (value[i] < 100)) {
-   fill(0, 255, 240, 255);
+    fill(0, 250, 250, 255);
   }
   // 60% //
-  if ((value[i] > 51) && (value[i] < 70)) {
+  if ((value[i] > 50) && (value[i] < 70)) {
     fill(0, 255, 250, 150);
   }
   // 40% //
   if ((value[i] > 1) && (value[i] < 50)) {
-    fill(0, 200, 250, 100);
+    fill(0, 250, 250, 70);
   }
   // 0% //
   if(value[i] < 1) {
-    fill(50);
+    fill(150);
   }
+
 
   //OVERALL PIECHART//
   noStroke();
