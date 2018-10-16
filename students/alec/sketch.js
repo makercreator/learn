@@ -268,8 +268,8 @@ function drawProject(diameter, data) {
   textAlign(LEFT);
   text(skills.getString(1,6), width/1.9,330);
   text(skills.getString(2,6), width/1.9,345);
-  text(skills.getString(2,6), width/1.9,360);
-  text(skills.getString(2,6), width/1.9,375);
+  text(skills.getString(3,6), width/1.9,360);
+  text(skills.getString(4,6), width/1.9,375);
   fill(255, 200, 150);
   text(skills.getString(overall,1), width/1.35,330);
   text(skills.getString(overall,4), width/1.35,345);
