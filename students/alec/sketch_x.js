@@ -2,8 +2,11 @@
 var skills;
 angles=[];
 value=[];
-projectval=[];
+x=[];
+y=[];
 var diameter=180;
+
+
 
 function preload(){
   skills=loadTable("skills - overall.csv", "loaded");
@@ -15,31 +18,26 @@ function setup() {
   noLoop();  // Run once and stop
 
 
-  var rowCount=skills.getRowCount(i,5)-1; // number of rows -1 to ignore last value (overall)
+  var rowCount=skills.getRowCount()-1; // number of rows -1 to ignore last value (overall)
   for(var i=0; i<rowCount; i++) {
   angles[i]=360/rowCount; // number of slices = circumfrance/number of rows
   }
+
 
   overall=rowCount; // rowCount is used to determine the last item which contains the overall percentage.
   //print(overall);
   for(var i=0; i<rowCount; i++) {
   value[i]=skills.getNum(i, 1);
   }
-
-  for(var i=0; i<rowCount; i++) {
-  projectval[i]=skills.getNum(i, 4);
-
-  }
 }
 
 function draw() {
-
   background(50);
+  noStroke();
   pieChart(diameter, angles);
-  drawProject(diameter, angles);
   drawLegend();
   fill(50);
-  noStroke();
+
 
 //LEGEND//
 function drawLegend() {
@@ -83,17 +81,12 @@ function drawLegend() {
 // DIVIDER LINES //
  stroke(255);
  line(400, 0, 400, 400);
- line(400, 270, 800, 270);
-//CURRENT ASSIGNMENT//
- stroke(255);
- line(210, 205, 380, 205);
+ line(400, 300, 800, 300);
 }
 }
 
-//SKILLS//
 
 function pieChart(diameter, data) {
-
   var lastAngle = PI+HALF_PI; // start at 12 o'clock
   //change color / slice//
   for (var i = 0; i < data.length; i++) {
@@ -127,8 +120,6 @@ function pieChart(diameter, data) {
   noStroke();
     arc(width/7,height/2.7, diameter, diameter, lastAngle, lastAngle-.02 + radians(angles[i])); // divides the pie chart based on how many rows in excell. .02 adds a gap.
     lastAngle += radians(angles[i]); //each slice starts where the last left off.
-
-
   }
 
 beginShape();
@@ -136,7 +127,7 @@ beginShape();
 
 for(var i=0; i<value.length; i++) {
     var x=map(value[i], 0, 100 , 0, 140);
-    var y=map(i, 0, value.length-1, 80, 300);//y position of progress bar
+    var y=map(i, 0, value.length-1, 20, 380);//y position of progress bar
     print(value[i]);
 
     //SKILLS TEXT//
@@ -183,6 +174,7 @@ for(var i=0; i<value.length; i++) {
 
   endShape();
 
+
   //OVERALL PERCENT//
     fill(50);
     noStroke();
@@ -199,82 +191,4 @@ for(var i=0; i<value.length; i++) {
     textAlign(CENTER);
     textSize(20);
     text(skills.getString(0,2), width/7,30);
-}
-
-//FINAL PROJECT//
-
-function drawProject(diameter, data) {
-  noStroke();
-  var lastAngle = PI+HALF_PI; // start at 12 o'clock
-  //change color / slice//
-  for (var i = 0; i < data.length; i++) {
-
-  if(projectval[i] < 100) {
-    fill(0, 200, 255, 255);
-  }
-  //100%//
-  if(projectval[i] == 100) {
-    fill(0, 255, 150, 255);
-  }
-   //80%//
-  if ((projectval[i] > 60) && (projectval[i] < 100)) {
-    fill(0, 250, 250, 255);
-  }
-  // 60% //
-  if ((projectval[i] > 40) && (projectval[i] < 60)) {
-    fill(0, 255, 250, 150);
-  }
-  // 40% //
-  if ((projectval[i] > 1) && (projectval[i] < 40)) {
-    fill(0, 250, 250, 70);
-  }
-  // 0% //
-  if(projectval[i] < 1) {
-    fill(150);
-  }
-
-  //OVERALL PIECHART//
-    arc(width/1.34,height/2.7, diameter, diameter, lastAngle, lastAngle-.02 + radians(angles[i])); // divides the pie chart based on how many rows in excell. .02 adds a gap.
-    lastAngle += radians(angles[i]); //each slice starts where the last left off.
-
-  }
-
-  //FINAL PROJECT//
-    fill(50);
-    ellipse(width/1.34,height/2.7,150,150);
-    stroke(255, 200, 150);
-    strokeWeight(1.5);
-    textAlign(CENTER);
-    textSize(50);
-    text(skills.getString(overall,4), width/1.33,height/2.4);
-   
-    //CURRENT AVERAGE//
-    stroke(255);
-    text(skills.getString(5,9), width/1.13,360);
-
-  // TITLE //
-    stroke(255, 200, 150);
-    strokeWeight(1.5);
-    textAlign(CENTER);
-    textSize(20);
-    text(skills.getString(0,5), width/1.33,30);
-
-    
-  // TERM 1 MARK//
-  text(skills.getString(0,6), width/1.33,300);
-  textSize(10);
-  noStroke();
-  fill(150);
-  textAlign(LEFT);
-  text(skills.getString(1,6), width/1.9,330);
-  text(skills.getString(2,6), width/1.9,345);
-  text(skills.getString(2,6), width/1.9,360);
-  text(skills.getString(2,6), width/1.9,375);
-  fill(255, 200, 150);
-  text(skills.getString(overall,1), width/1.35,330);
-  text(skills.getString(overall,4), width/1.35,345);
-  text(skills.getString(3,8), width/1.35,360);
-  text(skills.getString(4,8), width/1.35,375);
-  
-  
 }
