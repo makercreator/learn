@@ -103,7 +103,7 @@ function pieChart(diameter, data) {
     fill(0, 250, 250, 255);
   }
   // 60% //
-  if ((value[i] > 50) && (value[i] < 70)) {
+  if ((value[i] > 50) && (value[i] < 69)) {
     fill(0, 255, 250, 150);
   }
   // 40% //
@@ -142,15 +142,15 @@ for(var i=0; i<value.length; i++) {
     fill(0, 255, 150, 255);
   }
    //80%//
-  if ((value[i] > 60) && (value[i] < 100)) {
+  if ((value[i] > 70) && (value[i] < 100)) {
     fill(0, 250, 250, 255);
   }
   // 60% //
-  if ((value[i] > 40) && (value[i] < 60)) {
+  if ((value[i] > 50) && (value[i] < 69)) {
     fill(0, 255, 250, 150);
   }
   // 40% //
-  if ((value[i] > 1) && (value[i] < 40)) {
+  if ((value[i] > 1) && (value[i] < 50)) {
     fill(0, 250, 250, 70);
   }
   // 0% //

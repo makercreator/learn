@@ -158,15 +158,15 @@ for(var i=0; i<value.length; i++) {
     fill(0, 255, 150, 255);
   }
    //80%//
-  if ((value[i] > 60) && (value[i] < 100)) {
+  if ((value[i] > 70) && (value[i] < 100)) {
     fill(0, 250, 250, 255);
   }
   // 60% //
-  if ((value[i] > 40) && (value[i] < 60)) {
+  if ((value[i] > 50) && (value[i] < 70)) {
     fill(0, 255, 250, 150);
   }
   // 40% //
-  if ((value[i] > 1) && (value[i] < 40)) {
+  if ((value[i] > 1) && (value[i] < 50)) {
     fill(0, 200, 250, 100);
   }
   // 0% //
@@ -217,15 +217,15 @@ function drawProject(diameter, data) {
     fill(0, 255, 150, 255);
   }
    //80%//
-  if ((projectval[i] > 60) && (projectval[i] < 100)) {
+  if ((projectval[i] > 70) && (projectval[i] < 100)) {
     fill(0, 250, 250, 255);
   }
   // 60% //
-  if ((projectval[i] > 40) && (projectval[i] < 60)) {
+  if ((projectval[i] > 50) && (projectval[i] < 70)) {
     fill(0, 255, 250, 150);
   }
   // 40% //
-  if ((projectval[i] > 1) && (projectval[i] < 40)) {
+  if ((projectval[i] > 1) && (projectval[i] < 50)) {
     fill(0, 250, 250, 70);
   }
   // 0% //
