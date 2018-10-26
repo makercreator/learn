@@ -44,7 +44,7 @@ function draw() {
   ellipse(width/1.5,height/2.5,250,250);
 
 //OVERALL PERCENT//
-  fill(150);
+  stroke(255, 200, 150);
   textAlign(CENTER);
   textSize(80);
   text(skills.getString(overall,7), width/1.5,250);
@@ -53,13 +53,14 @@ function draw() {
 
 // STUDENT NAME & TITLE //
   textAlign(CENTER);
-  fill(0, 255, 150, 255);
+  //fill(0, 255, 150, 255);
   textSize(24);
   text(skills.getString(0,8), width/1.5,30);
 
   // FEEDBACK //
     textAlign(LEFT);
-    fill(200);
+    noStroke();
+    fill(255, 200, 150);
     textSize(12);
     fill(200);
     text(skills.getString(0,14), 35,410);
@@ -157,8 +158,6 @@ for(var i=0; i<value.length; i++) {
   for(var i=0; i<value.length; i++) {
   var y=map(i, 0, value.length, 20, 400);//y position of progress bar descriptors
   textSize(10);
-  noStroke();
-  fill(255);
   text(skills.getString(i,6), 80, y+10);
   }
 }

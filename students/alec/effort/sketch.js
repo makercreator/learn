@@ -31,7 +31,7 @@ function setup() {
   overall=rowCount; // rowCount is used to determine the last item which contains the overall percentage.
   //print(overall);
   for(var i=0; i<rowCount; i++) {
-  value[i]=skills.getNum(i, 7);
+  value[i]=skills.getNum(i, 1);
 
   }
 }
@@ -47,7 +47,7 @@ function draw() {
   fill(150);
   textAlign(CENTER);
   textSize(80);
-  text(skills.getString(overall,7), width/1.5,250);
+  text(skills.getString(overall,1), width/1.5,250);
 
 
 
@@ -55,21 +55,21 @@ function draw() {
   textAlign(CENTER);
   fill(0, 255, 150, 255);
   textSize(24);
-  text(skills.getString(0,8), width/1.5,30);
+  text(skills.getString(0,5), width/1.5,30);
 
   // FEEDBACK //
     textAlign(LEFT);
-    stroke(255, 200, 150);
+    fill(200);
     textSize(12);
     fill(200);
-    text(skills.getString(0,14), 35,410);
-    text(skills.getString(1,14), 35,430);
-    text(skills.getString(2,14), 35,450);
-    text(skills.getString(3,14), 35,470);
-    text(skills.getString(4,14), 35,490);
-    text(skills.getString(5,14), 35,510);
-    text(skills.getString(6,14), 35,530);
-    text(skills.getString(7,14), 35,550);
+    text(skills.getString(0,13), 35,410);
+    text(skills.getString(1,13), 35,430);
+    text(skills.getString(2,13), 35,450);
+    text(skills.getString(3,13), 35,470);
+    text(skills.getString(4,13), 35,490);
+    text(skills.getString(5,13), 35,510);
+    text(skills.getString(6,13), 35,530);
+    text(skills.getString(7,13), 35,550);
 }
 
 
@@ -159,6 +159,6 @@ for(var i=0; i<value.length; i++) {
   textSize(10);
   noStroke();
   fill(255);
-  text(skills.getString(i,6), 80, y+10);
+  text(skills.getString(i,3), 80, y+10);
   }
 }
