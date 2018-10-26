@@ -85,9 +85,8 @@ function drawLegend() {
  line(400, 0, 400, 400);
  line(400, 270, 800, 270);
 //CURRENT ASSIGNMENT//
-stroke(255);
-line(210, 235, 380, 235);
-
+ //stroke(255);
+ //line(210, 205, 380, 205);
 }
 }
 
@@ -248,10 +247,10 @@ function drawProject(diameter, data) {
     textAlign(CENTER);
     textSize(50);
     text(skills.getString(overall,4), width/1.33,height/2.4);
-
+   
     //CURRENT AVERAGE//
     stroke(255);
-    text(skills.getString(5,9), width/1.13,360);
+    text(skills.getString(1,12), width/1.13,360);
 
   // TITLE //
     stroke(255, 200, 150);
@@ -260,22 +259,23 @@ function drawProject(diameter, data) {
     textSize(20);
     text(skills.getString(0,5), width/1.33,30);
 
-
+    
   // TERM 1 MARK//
-  text(skills.getString(0,6), width/1.33,300);
+  text(skills.getString(0,12), width/1.33,300);
   textSize(10);
   noStroke();
   fill(150);
   textAlign(LEFT);
-  text(skills.getString(1,6), width/1.9,330);
-  text(skills.getString(2,6), width/1.9,345);
-  text(skills.getString(3,6), width/1.9,360);
-  text(skills.getString(4,6), width/1.9,375);
+  text(skills.getString(1,9), width/1.9,330);
+  text(skills.getString(2,9), width/1.9,345);
+  text(skills.getString(3,9), width/1.9,360);
+  text(skills.getString(4,9), width/1.9,375);
   fill(255, 200, 150);
-  text(skills.getString(overall,1), width/1.35,330);
-  text(skills.getString(overall,4), width/1.35,345);
-  text(skills.getString(3,8), width/1.35,360);
-  text(skills.getString(4,8), width/1.35,375);
-
-
+   textAlign(RIGHT);
+  text(skills.getString(1,10), width/1.35,330);
+  text(skills.getString(2,10), width/1.35,345);
+  text(skills.getString(3,10), width/1.35,360);
+  text(skills.getString(4,10), width/1.35,375);
+  
+  
 }
