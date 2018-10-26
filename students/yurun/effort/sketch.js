@@ -11,7 +11,7 @@ var radius = diameter / 2;
 
 
 function preload(){
-  skills=loadTable("skills - week 3.csv", "loaded");
+  skills=loadTable("skills - overall.csv", "loaded");
 }
 
 function setup() {
@@ -31,7 +31,7 @@ function setup() {
   overall=rowCount; // rowCount is used to determine the last item which contains the overall percentage.
   //print(overall);
   for(var i=0; i<rowCount; i++) {
-  value[i]=skills.getNum(i, 1);
+  value[i]=skills.getNum(i, 4);
 
   }
 }
@@ -47,7 +47,7 @@ function draw() {
   fill(150);
   textAlign(CENTER);
   textSize(80);
-  text(skills.getString(overall,1), width/1.5,250);
+  text(skills.getString(overall,4), width/1.5,250);
 
 
 
@@ -55,37 +55,54 @@ function draw() {
   textAlign(CENTER);
   fill(0, 255, 150, 255);
   textSize(24);
-  text(skills.getString(0,2), width/1.5,30);
+  text(skills.getString(0,5), width/1.5,30);
 
   // FEEDBACK //
     textAlign(LEFT);
     fill(200);
     textSize(12);
-    fill(0, 255, 150, 255);
-    text(skills.getString(0,3), 20,420);
-    fill(255, 150, 50, 255);
-    text(skills.getString(1,3), 35,440);
-    text(skills.getString(2,3), 35,455);
-    text(skills.getString(3,3), 35,470);
-    text(skills.getString(4,3), 35,485);
+    fill(200);
+    text(skills.getString(0,13), 35,410);
+    text(skills.getString(1,13), 35,430);
+    text(skills.getString(2,13), 35,450);
+    text(skills.getString(3,13), 35,470);
+    text(skills.getString(4,13), 35,490);
+    text(skills.getString(5,13), 35,510);
+    text(skills.getString(6,13), 35,530);
+    text(skills.getString(7,13), 35,550);
 }
 
 
 function pieChart(diameter, data) {
+
   var lastAngle = PI+HALF_PI; // start at 12 o'clock
   //change color / slice//
   for (var i = 0; i < data.length; i++) {
 
-
+  if(value[i] < 100) {
+    fill(0, 200, 255, 255);
+  }
   //100%//
   if(value[i] == 100) {
     fill(0, 255, 150, 255);
   }
-
+   //80%//
+  if ((value[i] > 70) && (value[i] < 100)) {
+    fill(0, 250, 250, 255);
+  }
+  // 60% //
+  if ((value[i] > 50) && (value[i] < 70)) {
+    fill(0, 255, 250, 150);
+  }
+  // 40% //
+  if ((value[i] > 1) && (value[i] < 50)) {
+    fill(0, 250, 250, 70);
+  }
   // 0% //
   if(value[i] < 1) {
     fill(150);
   }
+
 
   //draw slices//
     arc(width/1.5, height/2.5, diameter, diameter, lastAngle, lastAngle-.02 + radians(angles[i])); // divides the pie chart based on how many rows in excell. .02 adds a gap.
@@ -103,16 +120,30 @@ for(var i=0; i<value.length; i++) {
 
   var c=skills.getNum(i,1);
     if(value[i] < 100) {
-    stroke(255)
+    //stroke(255)
     fill(0, 200, 255, 255);
   }
 
   //100%//
+    if(value[i] < 100) {
+    fill(0, 200, 255, 255);
+  }
+  //100%//
   if(value[i] == 100) {
-    stroke(0, 255, 150, 255);
     fill(0, 255, 150, 255);
   }
-
+   //80%//
+  if ((value[i] > 70) && (value[i] < 100)) {
+    fill(0, 250, 250, 255);
+  }
+  // 60% //
+  if ((value[i] > 50) && (value[i] < 70)) {
+    fill(0, 255, 250, 150);
+  }
+  // 40% //
+  if ((value[i] > 1) && (value[i] < 50)) {
+    fill(0, 250, 250, 70);
+  }
   // 0% //
   if(value[i] < 1) {
     fill(150);
@@ -128,6 +159,6 @@ for(var i=0; i<value.length; i++) {
   textSize(10);
   noStroke();
   fill(255);
-  text(skills.getString(i,0), 80, y+10);
+  text(skills.getString(i,3), 80, y+10);
   }
 }
