@@ -84,9 +84,9 @@ function drawLegend() {
  stroke(255);
  line(400, 0, 400, 400);
  line(400, 270, 800, 270);
-//CURRENT ASSIGNMENT//
- stroke(255);
- line(210, 205, 380, 205);
+ //CURRENT ASSIGNMENT//
+ //stroke(255);
+ //line(210, 205, 380, 205);
 }
 }
 

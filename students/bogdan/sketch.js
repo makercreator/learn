@@ -84,7 +84,7 @@ function drawLegend() {
  stroke(255);
  line(400, 0, 400, 400);
  line(400, 270, 800, 270);
-//CURRENT ASSIGNMENT//
+ //CURRENT ASSIGNMENT//
  //stroke(255);
  //line(210, 205, 380, 205);
 }
@@ -271,7 +271,6 @@ function drawProject(diameter, data) {
   text(skills.getString(3,9), width/1.9,360);
   text(skills.getString(4,9), width/1.9,375);
   fill(255, 200, 150);
-   textAlign(RIGHT);
   text(skills.getString(1,10), width/1.35,330);
   text(skills.getString(2,10), width/1.35,345);
   text(skills.getString(3,10), width/1.35,360);
