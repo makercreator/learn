@@ -262,16 +262,16 @@ function drawProject(diameter, data) {
     text(skills.getString(0,5), width/1.33,30);
   
   //PARTICIPATION / TEACHER's SCALE //
-  textAlign(LEFT);
-  text(skills.getString(3,9), width/1.83,320);
-  text(skills.getString(4,9), width/1.83,360);
+ // textAlign(LEFT);
+ //  text(skills.getString(3,9), width/1.83,320);
+  // text(skills.getString(4,9), width/1.83,360);
   
   //PERCENTAGES
-  stroke(255);
-  text(skills.getString(3,11), width/1.2,320);
-  text("/ 20", width/1.15,320);
-  text(skills.getString(4,11), width/1.2,360);
-  text("/ 10", width/1.15,360);
+ // stroke(255);
+  //text(skills.getString(3,11), width/1.2,320);
+  //text("/ 20", width/1.15,320);
+  //text(skills.getString(4,11), width/1.2,360);
+  //text("/ 10", width/1.15,360);
   
     textSize(12);
     noStroke();
@@ -279,8 +279,8 @@ function drawProject(diameter, data) {
     textAlign(CENTER);
     text("40% of your mark", width/7,height/2.2);
     text("30% of your mark", width/1.34,height/2.2);
-    text("20% of your mark", width/1.65,335);
-    text("10% of your mark", width/1.65,375);
+   // text("20% of your mark", width/1.65,335);
+    //text("10% of your mark", width/1.65,375);
     
   /* TERM 1 MARK
     text(skills.getString(2,12), width/1.54,300);
