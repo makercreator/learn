@@ -1,8 +1,8 @@
 DOCUMENTS & DESCRIBES HOW THE TOOLS  WORK,100,WEEK 2 - VECTOR DRAWING,FEEDBACK
-USES THE PEN TOOL,100,,Fix link to your Gravit Design file. (yourusername_logo_v1.gvdesign)
-TRACES AN IMAGE,100,,"Compound shape needs to show a ""subtract"" or ""union"" of two objects. Subtract Big D from background."
-USESTHE SUBSELECT TOOL,100,,"Do  quick demosntration using ""convert to path"" on a font ."
-MANIPULATES THE JOINTS,100,,"Do  quick demosntration transforming the vector line into a shape using ""vectorize border""."
+USES THE PEN TOOL,100,,"Compound shape needs to show a ""subtract"" or ""union"" of two objects. Subtract Big D from background."
+TRACES AN IMAGE,100,,"Do  quick demosntration using ""convert to path"" on a font ."
+USESTHE SUBSELECT TOOL,100,,"Do  quick demosntration transforming the vector line into a shape using ""vectorize border""."
+MANIPULATES THE JOINTS,100,,
 MANIPULATES THE HANDLES TO REFINE PATH,100,,
 CONVERTS LOGO INTO OUTLINE ONLY,100,,
 EXPORTS SVG,100,,
