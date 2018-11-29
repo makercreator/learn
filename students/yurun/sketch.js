@@ -250,9 +250,6 @@ function drawProject(diameter, data) {
     textSize(50);
     text(skills.getString(overall,4), width/1.33,height/2.4);
    
-    //CURRENT AVERAGE//
-    //stroke(255);
-    //text(skills.getString(1,12), width/1.13,360);
 
   // TITLE //
     stroke(255, 200, 150);
@@ -277,8 +274,8 @@ function drawProject(diameter, data) {
     noStroke();
     fill(150);
     textAlign(CENTER);
-    text("40% of your mark", width/7,height/2.2);
-    text("30% of your mark", width/1.34,height/2.2);
+    text("of tasks completed", width/7,height/2.2);
+    //text("30% of your mark", width/1.34,height/2.2);
    // text("20% of your mark", width/1.65,335);
     //text("10% of your mark", width/1.65,375);
     
