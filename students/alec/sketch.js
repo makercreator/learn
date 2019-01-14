@@ -83,7 +83,7 @@ function drawLegend() {
 // DIVIDER LINES //
  stroke(255);
  line(400, 0, 400, 400);
- line(400, 270, 800, 270);
+// line(400, 270, 800, 270);
  //CURRENT ASSIGNMENT//
  //stroke(255);
  //line(210, 205, 380, 205);
@@ -136,7 +136,7 @@ beginShape();
 
 for(var i=0; i<value.length; i++) {
     var x=map(value[i], 0, 100 , 0, 140);
-    var y=map(i, 0, value.length-1, 80, 300);//y position of progress bar
+    var y=map(i, 0, value.length-1, 80, 380);//y position of progress bar
     print(value[i]);
 
     //SKILLS TEXT//
@@ -234,24 +234,81 @@ function drawProject(diameter, data) {
   }
 
   //OVERALL PIECHART//
-    arc(width/1.34,height/2.7, diameter, diameter, lastAngle, lastAngle-.02 + radians(angles[i])); // divides the pie chart based on how many rows in excell. .02 adds a gap.
+    arc(width/1.55,height/2.7, diameter, diameter, lastAngle, lastAngle-.02 + radians(angles[i])); // divides the pie chart based on how many rows in excell. .02 adds a gap.
     lastAngle += radians(angles[i]); //each slice starts where the last left off.
 
   }
+  
+  beginShape();
+
+
+for(var i=0; i<value.length; i++) {
+    var x=map(projectval[i], 0, 100 , 0, 140);
+    var y=map(i, 0, value.length-1, 80, 380);//y position of progress bar
+    print(projectval[i]);
+
+    //SKILLS TEXT//
+    textSize(10);
+    noStroke();
+    textAlign(LEFT);
+    fill(150);
+    text(skills.getString(i,3), 630, y-5);
+
+
+  var c=skills.getNum(i,4);
+    if(projectval[i] < 100) {
+    fill(0, 200, 255, 255);
+  }
+    if(projectval[i] < 100) {
+    fill(0, 200, 255, 255);
+  }
+  //100%//
+  if(projectval[i] == 100) {
+    fill(0, 255, 150, 255);
+  }
+   //80%//
+  if ((projectval[i] > 70) && (projectval[i] < 100)) {
+    fill(0, 250, 250, 255);
+  }
+  // 60% //
+  if ((projectval[i] > 50) && (projectval[i] < 70)) {
+    fill(0, 255, 250, 150);
+  }
+  // 40% //
+  if ((projectval[i] > 1) && (projectval[i] < 50)) {
+    fill(0, 200, 250, 100);
+  }
+  // 0% //
+  if(projectval[i] < 1) {
+    fill(150);
+  }
+
+  noFill();
+  stroke(255, 200, 150);
+  strokeWeight(.7);
+  rect(630,y, x+1, 10);//+1 to show a line when value=0,
+
+}
+
+  endShape();
+  
+  
+  
 
   //FINAL PROJECT//
     fill(50);
-    ellipse(width/1.34,height/2.7,150,150);
+    noStroke();
+    ellipse(width/1.55,height/2.7,150,150);
     stroke(255, 200, 150);
     strokeWeight(1.5);
     textAlign(CENTER);
     textSize(50);
-    text(skills.getString(overall,4), width/1.33,height/2.4);
+    text(skills.getString(overall,4), width/1.55,height/2.4);
    
-    //CURRENT AVERAGE//
+   /* //CURRENT AVERAGE//
     stroke(255);
     text(skills.getString(1,12), width/1.13,360);
-
+*/
   // TITLE //
     stroke(255, 200, 150);
     strokeWeight(1.5);
@@ -261,7 +318,7 @@ function drawProject(diameter, data) {
 
     
   // TERM 1 MARK//
-  text(skills.getString(0,12), width/1.33,300);
+  /*text(skills.getString(0,12), width/1.33,300);
   textSize(10);
   noStroke();
   fill(150);
@@ -275,6 +332,6 @@ function drawProject(diameter, data) {
   text(skills.getString(2,10), width/1.35,345);
   text(skills.getString(3,10), width/1.35,360);
   text(skills.getString(4,10), width/1.35,375);
-  
+  */
   
 }
