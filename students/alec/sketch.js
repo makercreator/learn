@@ -198,7 +198,7 @@ for(var i=0; i<value.length; i++) {
     strokeWeight(1.5);
     textAlign(CENTER);
     textSize(20);
-    text(skills.getString(0,2), width/7,30);
+    text(skills.getString(0,2), width/4,30);
 }
 
 //FINAL PROJECT//
