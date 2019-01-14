@@ -192,13 +192,12 @@ for(var i=0; i<value.length; i++) {
     textAlign(CENTER);
     textSize(50);
     text(skills.getString(overall,1), width/7,height/2.4);
+    textSize(12);
+    noStroke();
+    fill(255, 200, 150);
+    text("complete", width/7,height/2.2);
 
-  // TITLE //
-    stroke(255, 200, 150);
-    strokeWeight(1.5);
-    textAlign(CENTER);
-    textSize(20);
-    text(skills.getString(0,2), width/4,30);
+
 }
 
 //FINAL PROJECT//
@@ -247,7 +246,7 @@ for(var i=0; i<value.length; i++) {
     var y=map(i, 0, value.length-1, 80, 380);//y position of progress bar
     print(projectval[i]);
 
-    //SKILLS TEXT//
+    //FINAL PROJECT TEXT//
     textSize(10);
     noStroke();
     textAlign(LEFT);
@@ -304,17 +303,25 @@ for(var i=0; i<value.length; i++) {
     textAlign(CENTER);
     textSize(50);
     text(skills.getString(overall,4), width/1.55,height/2.4);
+    noStroke();
+    textSize(10);
+    fill(255, 200, 150);
+    text("complete", width/1.55,height/2.2);
+
+
    
    /* //CURRENT AVERAGE//
     stroke(255);
     text(skills.getString(1,12), width/1.13,360);
 */
   // TITLE //
+    noFill();
+    strokeWeight(.5);
     stroke(255, 200, 150);
-    strokeWeight(1.5);
     textAlign(CENTER);
     textSize(20);
     text(skills.getString(0,5), width/1.33,30);
+    text(skills.getString(0,2), width/4,30);
 
     
   // TERM 1 MARK//

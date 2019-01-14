@@ -55,15 +55,15 @@ function drawLegend() {
   //0%//
  stroke(150);
  fill(50);
- rect(lx, ly+90, 10, 10);
+ rect(lx, ly+10, 10, 10);
  noStroke();
  fill(150);
- text("0%", lx+20, ly+100);
+ text("0%", lx+20, ly+20);
 
   //40%//
  fill(0, 200, 250, 100);
- rect(lx, ly+70, 10, 10);
- text("1% - 50%", lx+20, ly+80);
+ rect(lx, ly+30, 10, 10);
+ text("1% - 50%", lx+20, ly+40);
 
   //60%//
  fill(0, 255, 250, 150);
@@ -72,18 +72,18 @@ function drawLegend() {
 
   //80%//
  fill(0, 255, 240, 255);
- rect(lx, ly+30, 10, 10);
- text("70% - 90%", lx+20, ly+40);
+ rect(lx, ly+70, 10, 10);
+ text("70% - 90%", lx+20, ly+80);
 
   //100%//
  fill(0, 255, 150, 255);
- rect(lx, ly+10, 10, 10);
- text("100%", lx+20, ly+20);
+ rect(lx, ly+90, 10, 10);
+ text("100%", lx+20, ly+100);
 
 // DIVIDER LINES //
  stroke(255);
  line(400, 0, 400, 400);
- line(400, 270, 800, 270);
+// line(400, 270, 800, 270);
  //CURRENT ASSIGNMENT//
  //stroke(255);
  //line(210, 205, 380, 205);
@@ -136,7 +136,7 @@ beginShape();
 
 for(var i=0; i<value.length; i++) {
     var x=map(value[i], 0, 100 , 0, 140);
-    var y=map(i, 0, value.length-1, 80, 300);//y position of progress bar
+    var y=map(i, 0, value.length-1, 80, 380);//y position of progress bar
     print(value[i]);
 
     //SKILLS TEXT//
@@ -192,14 +192,11 @@ for(var i=0; i<value.length; i++) {
     textAlign(CENTER);
     textSize(50);
     text(skills.getString(overall,1), width/7,height/2.4);
-  
+    textSize(12);
+    noStroke();
+    fill(255, 200, 150);
+    text("complete", width/7,height/2.2);
 
-  // TITLE //
-    stroke(255, 200, 150);
-    strokeWeight(1.5);
-    textAlign(CENTER);
-    textSize(20);
-    text(skills.getString(0,2), width/4,30);
 
 }
 
@@ -236,69 +233,112 @@ function drawProject(diameter, data) {
   }
 
   //OVERALL PIECHART//
-    arc(width/1.34,height/2.7, diameter, diameter, lastAngle, lastAngle-.02 + radians(angles[i])); // divides the pie chart based on how many rows in excell. .02 adds a gap.
+    arc(width/1.55,height/2.7, diameter, diameter, lastAngle, lastAngle-.02 + radians(angles[i])); // divides the pie chart based on how many rows in excell. .02 adds a gap.
     lastAngle += radians(angles[i]); //each slice starts where the last left off.
 
   }
+  
+  beginShape();
+
+
+for(var i=0; i<value.length; i++) {
+    var x=map(projectval[i], 0, 100 , 0, 140);
+    var y=map(i, 0, value.length-1, 80, 380);//y position of progress bar
+    print(projectval[i]);
+
+    //FINAL PROJECT TEXT//
+    textSize(10);
+    noStroke();
+    textAlign(LEFT);
+    fill(150);
+    text(skills.getString(i,3), 630, y-5);
+
+
+  var c=skills.getNum(i,4);
+    if(projectval[i] < 100) {
+    fill(0, 200, 255, 255);
+  }
+    if(projectval[i] < 100) {
+    fill(0, 200, 255, 255);
+  }
+  //100%//
+  if(projectval[i] == 100) {
+    fill(0, 255, 150, 255);
+  }
+   //80%//
+  if ((projectval[i] > 70) && (projectval[i] < 100)) {
+    fill(0, 250, 250, 255);
+  }
+  // 60% //
+  if ((projectval[i] > 50) && (projectval[i] < 70)) {
+    fill(0, 255, 250, 150);
+  }
+  // 40% //
+  if ((projectval[i] > 1) && (projectval[i] < 50)) {
+    fill(0, 200, 250, 100);
+  }
+  // 0% //
+  if(projectval[i] < 1) {
+    fill(150);
+  }
+
+  noFill();
+  stroke(255, 200, 150);
+  strokeWeight(.7);
+  rect(630,y, x+1, 10);//+1 to show a line when value=0,
+
+}
+
+  endShape();
+  
+  
+  
 
   //FINAL PROJECT//
     fill(50);
-    ellipse(width/1.34,height/2.7,150,150);
+    noStroke();
+    ellipse(width/1.55,height/2.7,150,150);
     stroke(255, 200, 150);
     strokeWeight(1.5);
     textAlign(CENTER);
     textSize(50);
-    text(skills.getString(overall,4), width/1.33,height/2.4);
-   
+    text(skills.getString(overall,4), width/1.55,height/2.4);
+    noStroke();
+    textSize(10);
+    fill(255, 200, 150);
+    text("complete", width/1.55,height/2.2);
 
+
+   
+   /* //CURRENT AVERAGE//
+    stroke(255);
+    text(skills.getString(1,12), width/1.13,360);
+*/
   // TITLE //
+    noFill();
+    strokeWeight(.5);
     stroke(255, 200, 150);
-    strokeWeight(1.5);
     textAlign(CENTER);
     textSize(20);
     text(skills.getString(0,5), width/1.33,30);
-  
-  //PARTICIPATION / TEACHER's SCALE //
- // textAlign(LEFT);
- //  text(skills.getString(3,9), width/1.83,320);
-  // text(skills.getString(4,9), width/1.83,360);
-  
-  //PERCENTAGES
- // stroke(255);
-  //text(skills.getString(3,11), width/1.2,320);
-  //text("/ 20", width/1.15,320);
-  //text(skills.getString(4,11), width/1.2,360);
-  //text("/ 10", width/1.15,360);
-  
-    textSize(12);
-    noStroke();
-    fill(150);
-    textAlign(CENTER);
-    text("of tasks completed", width/7,height/2.2);
-    //text("30% of your mark", width/1.34,height/2.2);
-   // text("20% of your mark", width/1.65,335);
-    //text("10% of your mark", width/1.65,375);
+    text(skills.getString(0,2), width/4,30);
+
     
-  /* TERM 1 MARK
-    text(skills.getString(2,12), width/1.54,300);
-    text(skills.getString(3,12), width/1.2,300);
-    text(skills.getString(0,12), width/1.53,330);
-    text(skills.getString(1,12), width/1.2,330);
-*/
+  // TERM 1 MARK//
+  /*text(skills.getString(0,12), width/1.33,300);
   textSize(10);
   noStroke();
   fill(150);
   textAlign(LEFT);
-   
-  //NOTES//
- // text(skills.getString(1,15), width/1.83,350);
-  //CATEGORIES
-
-  //text(skills.getString(0,12), width/1.5,365);
- // text(skills.getString(1,11), width/1.2,380);
-
-
-  //text(skills.getString(4,10), width/1.35,375);
- 
+  text(skills.getString(1,9), width/1.9,330);
+  text(skills.getString(2,9), width/1.9,345);
+  text(skills.getString(3,9), width/1.9,360);
+  text(skills.getString(4,9), width/1.9,375);
+  fill(255, 200, 150);
+  text(skills.getString(1,10), width/1.35,330);
+  text(skills.getString(2,10), width/1.35,345);
+  text(skills.getString(3,10), width/1.35,360);
+  text(skills.getString(4,10), width/1.35,375);
+  */
   
 }
