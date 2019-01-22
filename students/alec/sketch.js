@@ -60,7 +60,7 @@ function drawLegend() {
  fill(150);
  text("0%", lx+20, ly+20);
 
-  //40%//
+  //1 - 50%//
  fill(0, 200, 250, 100);
  rect(lx, ly+30, 10, 10);
  text("1% - 50%", lx+20, ly+40);
@@ -68,12 +68,12 @@ function drawLegend() {
   //60%//
  fill(0, 255, 250, 150);
  rect(lx, ly+50, 10, 10);
- text("50% - 70%", lx+20, ly+60);
+ text("50% - 80%", lx+20, ly+60);
 
   //80%//
  fill(0, 255, 240, 255);
  rect(lx, ly+70, 10, 10);
- text("70% - 90%", lx+20, ly+80);
+ text("80% - 99%", lx+20, ly+80);
 
   //100%//
  fill(0, 255, 150, 255);
@@ -105,7 +105,7 @@ function pieChart(diameter, data) {
   if(value[i] == 100) {
     fill(0, 255, 150, 255);
   }
-   //80%//
+   //80-99%//
   if ((value[i] > 70) && (value[i] < 100)) {
     fill(0, 250, 250, 255);
   }
@@ -145,37 +145,35 @@ for(var i=0; i<value.length; i++) {
     fill(150);
     text(skills.getString(i,0), 230, y-5);
 
+//PROGRESS BARS//
 
   var c=skills.getNum(i,1);
+
     if(value[i] < 100) {
-    fill(0, 200, 255, 255);
+    stroke(0, 200, 255, 255);
   }
-    if(value[i] < 100) {
-    fill(0, 200, 255, 255);
-  }
+  noFill();
   //100%//
   if(value[i] == 100) {
     fill(0, 255, 150, 255);
   }
-   //80%//
+   //70-90%//
   if ((value[i] > 70) && (value[i] < 100)) {
-    fill(0, 250, 250, 255);
+    stroke(0, 250, 250, 255);
   }
   // 60% //
   if ((value[i] > 50) && (value[i] < 70)) {
-    fill(0, 255, 250, 150);
+    stroke(0, 255, 250, 150);
   }
-  // 40% //
+  // 1 -50% //
   if ((value[i] > 1) && (value[i] < 50)) {
-    fill(0, 200, 250, 100);
+    stroke(0, 200, 250, 100);
   }
   // 0% //
   if(value[i] < 1) {
-    fill(150);
+    stroke(150);
   }
 
-  noFill();
-  stroke(255, 200, 150);
   strokeWeight(.7);
   rect(230,y, x+1, 10);//+1 to show a line when value=0,
 
@@ -215,15 +213,15 @@ function drawProject(diameter, data) {
   if(projectval[i] == 100) {
     fill(0, 255, 150, 255);
   }
-   //80%//
+   //80% - 99%//
   if ((projectval[i] > 70) && (projectval[i] < 100)) {
     fill(0, 250, 250, 255);
   }
-  // 60% //
+  // 50 - 80% //
   if ((projectval[i] > 50) && (projectval[i] < 70)) {
     fill(0, 255, 250, 150);
   }
-  // 40% //
+  // 1 - 50% //
   if ((projectval[i] > 1) && (projectval[i] < 50)) {
     fill(0, 250, 250, 70);
   }
@@ -255,35 +253,32 @@ for(var i=0; i<value.length; i++) {
 
 
   var c=skills.getNum(i,4);
+ noFill();
     if(projectval[i] < 100) {
-    fill(0, 200, 255, 255);
-  }
-    if(projectval[i] < 100) {
-    fill(0, 200, 255, 255);
+    stroke(0, 200, 255, 255);
   }
   //100%//
   if(projectval[i] == 100) {
     fill(0, 255, 150, 255);
   }
-   //80%//
-  if ((projectval[i] > 70) && (projectval[i] < 100)) {
-    fill(0, 250, 250, 255);
+ 
+   //80 - 99%//
+  if ((projectval[i] > 70) && (projectval[i] <= 99)) {
+    stroke(0, 250, 250, 255);
   }
-  // 60% //
+  // 50 - 80% //
   if ((projectval[i] > 50) && (projectval[i] < 70)) {
-    fill(0, 255, 250, 150);
+    stroke(0, 255, 250, 150);
   }
-  // 40% //
+  // 1 - 50% //
   if ((projectval[i] > 1) && (projectval[i] < 50)) {
-    fill(0, 200, 250, 100);
+    stroke(0, 200, 250, 100);
   }
   // 0% //
   if(projectval[i] < 1) {
-    fill(150);
+    stroke(150);
   }
 
-  noFill();
-  stroke(255, 200, 150);
   strokeWeight(.7);
   rect(630,y, x+1, 10);//+1 to show a line when value=0,
 

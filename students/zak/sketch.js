@@ -253,7 +253,7 @@ for(var i=0; i<value.length; i++) {
 
 
   var c=skills.getNum(i,4);
-
+ noFill();
     if(projectval[i] < 100) {
     stroke(0, 200, 255, 255);
   }
@@ -261,7 +261,7 @@ for(var i=0; i<value.length; i++) {
   if(projectval[i] == 100) {
     fill(0, 255, 150, 255);
   }
-  noFill();
+ 
    //80 - 99%//
   if ((projectval[i] > 70) && (projectval[i] <= 99)) {
     stroke(0, 250, 250, 255);
