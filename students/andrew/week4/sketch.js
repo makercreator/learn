@@ -11,7 +11,7 @@ var radius = diameter / 2;
 
 
 function preload(){
-  skills=loadTable("skills - week 4.csv", "loaded");
+  skills=loadTable("skills - 07.csv", "loaded");
 }
 
 function setup() {
@@ -44,14 +44,17 @@ function draw() {
   ellipse(width/1.5,height/2.5,250,250);
 
 //OVERALL PERCENT//
-  fill(150);
+  stroke(255);
   textAlign(CENTER);
   textSize(80);
   text(skills.getString(overall,1), width/1.5,250);
+  textSize(16);
+  noStroke();
+  fill(150);
+  text("complete", width/1.5,275);
 
+// TITLE //
 
-
-// STUDENT NAME & TITLE //
   textAlign(CENTER);
   fill(0, 255, 150, 255);
   textSize(24);
@@ -64,29 +67,11 @@ function draw() {
     fill(0, 255, 150, 255);
     text(skills.getString(0,3), 20,420);
     fill(255, 150, 50, 255);
-    text(skills.getString(1,3), 35,440);
-    text(skills.getString(2,3), 35,455);
-    text(skills.getString(3,3), 35,470);
-    text(skills.getString(4,3), 35,485);
-    
-//LEGEND//
- textAlign(LEFT);
- fill(200);
- textSize(12);
- noStroke();
- text("100% COMPLETE", 660, 380);
- text("INCOMPLETE", 660, 420);
- text("MISSING", 660, 460);
- fill(0, 255, 150, 255);
- rect(660, 350, 30, 10);
- fill(0, 250, 250, 70);
- rect(660, 390, 30, 10);
- fill(150);
- rect(660, 430, 30, 10);
-  
+    text(skills.getString(1,3), 35,445);
+    text(skills.getString(2,3), 35,470);
+    text(skills.getString(3,3), 35,495);
+    text(skills.getString(4,3), 35,525);
 }
-
- 
 
 function pieChart(diameter, data) {
   var lastAngle = PI+HALF_PI; // start at 12 o'clock
@@ -99,9 +84,14 @@ function pieChart(diameter, data) {
     fill(0, 255, 150, 255);
   }
 
-  // 50% //
-  if (value[i] == 50){
+  //50%//
+  if(value[i] == 50) {
     fill(0, 250, 250, 70);
+  }
+  
+  //75%//
+  if(value[i] == 75) {
+    fill(0, 250, 250, 255);
   }
 
   // 0% //
@@ -125,24 +115,30 @@ for(var i=0; i<value.length; i++) {
 
   var c=skills.getNum(i,1);
     if(value[i] < 100) {
+    //stroke(255)
     fill(0, 200, 255, 255);
   }
 
   //100%//
   if(value[i] == 100) {
-    //stroke(0, 255, 150, 255);
     fill(0, 255, 150, 255);
   }
-  // 50% //
-  if (value[i] == 50){
+
+  //50%//
+  if(value[i] == 50) {
     fill(0, 250, 250, 70);
   }
+  
+  //75%//
+  if(value[i] == 75) {
+    fill(0, 250, 250, 255);
+  }
+
   // 0% //
   if(value[i] < 1) {
     fill(150);
   }
 
- 
   rect(50, y, x+1, 12);x
 
 }
