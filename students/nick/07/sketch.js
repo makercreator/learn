@@ -84,6 +84,16 @@ function pieChart(diameter, data) {
     fill(0, 255, 150, 255);
   }
 
+  //50%//
+  if(value[i] == 50) {
+    fill(0, 250, 250, 70);
+  }
+  
+  //75%//
+  if(value[i] == 75) {
+    fill(0, 250, 250, 255);
+  }
+
   // 0% //
   if(value[i] < 1) {
     fill(150);
@@ -105,14 +115,23 @@ for(var i=0; i<value.length; i++) {
 
   var c=skills.getNum(i,1);
     if(value[i] < 100) {
-    stroke(255)
+    //stroke(255)
     fill(0, 200, 255, 255);
   }
 
   //100%//
   if(value[i] == 100) {
-    stroke(0, 255, 150, 255);
     fill(0, 255, 150, 255);
+  }
+
+  //50%//
+  if(value[i] == 50) {
+    fill(0, 250, 250, 70);
+  }
+  
+  //75%//
+  if(value[i] == 75) {
+    fill(0, 250, 250, 255);
   }
 
   // 0% //
