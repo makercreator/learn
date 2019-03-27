@@ -11,7 +11,7 @@ var radius = diameter / 2;
 
 
 function preload(){
-  skills=loadTable("skills - 11.csv", "loaded");
+  skills=loadTable("skills - 13.csv", "loaded");
 }
 
 function setup() {
@@ -88,7 +88,7 @@ function pieChart(diameter, data) {
   if(value[i] == 50) {
     fill(0, 250, 250, 70);
   }
-  
+
   //75%//
   if(value[i] == 75) {
     fill(0, 250, 250, 255);
@@ -128,7 +128,7 @@ for(var i=0; i<value.length; i++) {
   if(value[i] == 50) {
     fill(0, 250, 250, 70);
   }
-  
+
   //75%//
   if(value[i] == 75) {
     fill(0, 250, 250, 255);
